@@ -78,26 +78,88 @@ header li:hover::after {
 
 
 /*  -------------- Main Section --------------  */
-main{
+main {
     min-height: 90vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
 }
-.filter-feature{
+
+.filter-feature {
     width: 20%;
-    background: #fff ;
+    background: #fff;
     box-shadow: 0px 2px 4px #ddd;
     border-radius: 5px;
 }
-.courses-list{
+
+.courses-list {
     width: 78%;
     /* background: #fff ; */
     box-shadow: 0px 2px 4px #ddd;
     border-radius: 5px;
     border: 1px solid #ddd;
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+.courses-list .course {
+    width: 30%;
+    height: 33vh;
+    position: relative;
+    border-radius: 3px 2rem;
+    overflow: hidden;
+    border: 1px solid #80004b;
+    border-right: 5px solid #80004b;
+    border-bottom: 5px solid #80004b;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+
+.course img {
+    width: 100%;
+    object-fit: cover;
+    transition: all .4s ease;
+    border-radius: 5px 2rem;
+    padding: 1rem;
+}
+
+.course .course-details {
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to left, #18181896, #80004b);
+    color: #ddd;
+    border-radius: 5px 2rem;
+    padding: .5rem;
+    text-align: center;
+}
+
+.course-details button {
+    width: 80%;
+    display: block;
+    margin: .5rem auto;
+    height: 5vh;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #bd1b36;
+    color: #ddd;
+    transition: all .5s ease;
+}
+
+.course-details button:hover {
+    background-color: #db1c3c;
+}
+
+.course-details p {
+    font-size: 14px;
+}
+
 /* ------------ Footer ------------  */
 
 footer {
