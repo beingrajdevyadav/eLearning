@@ -1,0 +1,870 @@
+[
+    {
+        "course": "HTML Basics",
+        "courseName": "Introduction to HTML",
+        "courseDescription": "Learn the fundamentals of HTML and create your first webpage.",
+        "rating": {
+            "stars": 4.7,
+            "counts": 1500
+        },
+        "instructor": {
+            "name": "Amit Sharma",
+            "gender": "Male"
+        },
+        "courseDuration": {
+            "hours": 5,
+            "lectures": 20
+        },
+        "coursePrice": 2499,
+        "courseLevel": {
+            "begginer": true,
+            "intermediate": false,
+            "export": false,
+            "allLevel": false
+        },
+        "courseTag": {
+            "bestSeller": true,
+            "newest": false,
+            "popular": true
+        },
+        "courseType": {
+            "paid": true,
+            "free": false
+        },
+        "courseTopic": "HTML",
+        "courseFeatures": {
+            "subtitle": true,
+            "quizes": true,
+            "codingExercise": false,
+            "practiceTest": false
+        }
+    },
+    {
+        "course": "Advanced HTML",
+        "courseName": "Mastering HTML5",
+        "courseDescription": "Deep dive into advanced HTML5 features and best practices.",
+        "rating": {
+            "stars": 4.8,
+            "counts": 2300
+        },
+        "instructor": {
+            "name": "Priya Iyer",
+            "gender": "Female"
+        },
+        "courseDuration": {
+            "hours": 8,
+            "lectures": 35
+        },
+        "coursePrice": 3199,
+        "courseLevel": {
+            "begginer": false,
+            "intermediate": true,
+            "export": false,
+            "allLevel": false
+        },
+        "courseTag": {
+            "bestSeller": false,
+            "newest": false,
+            "popular": true
+        },
+        "courseType": {
+            "paid": true,
+            "free": false
+        },
+        "courseTopic": "HTML5",
+        "courseFeatures": {
+            "subtitle": true,
+            "quizes": true,
+            "codingExercise": true,
+            "practiceTest": false
+        }
+    },
+    {
+        "course": "HTML & CSS",
+        "courseName": "Building Websites with HTML & CSS",
+        "courseDescription": "Learn how to combine HTML and CSS to build modern websites.",
+        "rating": {
+            "stars": 4.6,
+            "counts": 1800
+        },
+        "instructor": {
+            "name": "Ravi Verma",
+            "gender": "Male"
+        },
+        "courseDuration": {
+            "hours": 6,
+            "lectures": 28
+        },
+        "coursePrice": 2799,
+        "courseLevel": {
+            "begginer": true,
+            "intermediate": true,
+            "export": false,
+            "allLevel": false
+        },
+        "courseTag": {
+            "bestSeller": true,
+            "newest": false,
+            "popular": true
+        },
+        "courseType": {
+            "paid": true,
+            "free": false
+        },
+        "courseTopic": "HTML & CSS",
+        "courseFeatures": {
+            "subtitle": true,
+            "quizes": true,
+            "codingExercise": true,
+            "practiceTest": true
+        }
+    },
+    {
+        "course": "HTML Crash Course",
+        "courseName": "Quick HTML for Beginners",
+        "courseDescription": "A fast-paced introduction to HTML for absolute beginners.",
+        "rating": {
+            "stars": 4.5,
+            "counts": 1200
+        },
+        "instructor": {
+            "name": "Suman Mishra",
+            "gender": "Female"
+        },
+        "courseDuration": {
+            "hours": 3,
+            "lectures": 12
+        },
+        "coursePrice": 1599,
+        "courseLevel": {
+            "begginer": true,
+            "intermediate": false,
+            "export": false,
+            "allLevel": false
+        },
+        "courseTag": {
+            "bestSeller": false,
+            "newest": true,
+            "popular": false
+        },
+        "courseType": {
+            "paid": true,
+            "free": false
+        },
+        "courseTopic": "HTML",
+        "courseFeatures": {
+            "subtitle": false,
+            "quizes": false,
+            "codingExercise": false,
+            "practiceTest": false
+        }
+    },
+
+    {
+        "course": "CSS Basics",
+        "courseName": "CSS for Beginners",
+        "courseDescription": "Learn the basics of CSS and how to style web pages effectively.",
+        "rating": { "stars": 4.5, "counts": 1200 },
+        "instructor": { "name": "Ravi Sharma", "gender": "Male" },
+        "courseDuration": { "hours": 5, "lectures": 20 },
+        "coursePrice": 4199,
+        "courseLevel": { "begginer": true, "intermediate": false, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "CSS Fundamentals",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": false, "practiceTest": true }
+    },
+    {
+        "course": "Advanced CSS Techniques",
+        "courseName": "Mastering CSS",
+        "courseDescription": "Deep dive into advanced CSS concepts like flexbox, grid, and animations.",
+        "rating": { "stars": 4.8, "counts": 2000 },
+        "instructor": { "name": "Priya Verma", "gender": "Female" },
+        "courseDuration": { "hours": 10, "lectures": 35 },
+        "coursePrice": 6699,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": true, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Advanced CSS",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "CSS Grid Masterclass",
+        "courseName": "Mastering CSS Grid",
+        "courseDescription": "Learn how to create responsive layouts with CSS Grid.",
+        "rating": { "stars": 4.7, "counts": 1500 },
+        "instructor": { "name": "Amit Kapoor", "gender": "Male" },
+        "courseDuration": { "hours": 8, "lectures": 28 },
+        "coursePrice": 4999,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": false, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "CSS Grid",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": false }
+    },
+    {
+        "course": "CSS Flexbox Explained",
+        "courseName": "Understanding CSS Flexbox",
+        "courseDescription": "Master the CSS Flexbox layout module with practical examples.",
+        "rating": { "stars": 4.6, "counts": 1800 },
+        "instructor": { "name": "Neha Iyer", "gender": "Female" },
+        "courseDuration": { "hours": 6, "lectures": 24 },
+        "coursePrice": 4599,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "CSS Flexbox",
+        "courseFeatures": { "subtitle": true, "quizes": false, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Responsive Web Design with CSS",
+        "courseName": "Responsive CSS Techniques",
+        "courseDescription": "Create responsive websites using CSS techniques like media queries.",
+        "rating": { "stars": 4.9, "counts": 2200 },
+        "instructor": { "name": "Vikram Joshi", "gender": "Male" },
+        "courseDuration": { "hours": 12, "lectures": 40 },
+        "coursePrice": 7499,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": true, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Responsive Design",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+
+    {
+        "course": "JavaScript Basics",
+        "courseName": "JavaScript for Beginners",
+        "courseDescription": "Learn the fundamentals of JavaScript and how to build interactive web pages.",
+        "rating": { "stars": 4.5, "counts": 1300 },
+        "instructor": { "name": "Rajesh Gupta", "gender": "Male" },
+        "courseDuration": { "hours": 6, "lectures": 22 },
+        "coursePrice": 4499,
+        "courseLevel": { "begginer": true, "intermediate": false, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "JavaScript Fundamentals",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Advanced JavaScript",
+        "courseName": "Mastering JavaScript",
+        "courseDescription": "Deep dive into JavaScript concepts like closures, prototypes, and async programming.",
+        "rating": { "stars": 4.8, "counts": 2100 },
+        "instructor": { "name": "Anjali Mehta", "gender": "Female" },
+        "courseDuration": { "hours": 12, "lectures": 38 },
+        "coursePrice": 6999,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": true, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Advanced JavaScript",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "JavaScript ES6 and Beyond",
+        "courseName": "Modern JavaScript Features",
+        "courseDescription": "Learn about modern JavaScript features introduced in ES6 and later versions.",
+        "rating": { "stars": 4.7, "counts": 1700 },
+        "instructor": { "name": "Sandeep Kulkarni", "gender": "Male" },
+        "courseDuration": { "hours": 9, "lectures": 30 },
+        "coursePrice": 5299,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": false, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Modern JavaScript",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": false }
+    },
+    {
+        "course": "JavaScript for Web Development",
+        "courseName": "Practical JavaScript for Web Apps",
+        "courseDescription": "Use JavaScript to build dynamic and interactive web applications.",
+        "rating": { "stars": 4.6, "counts": 1900 },
+        "instructor": { "name": "Meera Nair", "gender": "Female" },
+        "courseDuration": { "hours": 8, "lectures": 28 },
+        "coursePrice": 4999,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Web Development with JavaScript",
+        "courseFeatures": { "subtitle": true, "quizes": false, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Full-Stack JavaScript Development",
+        "courseName": "JavaScript for Frontend and Backend",
+        "courseDescription": "Learn how to use JavaScript for both frontend and backend development with Node.js.",
+        "rating": { "stars": 4.9, "counts": 2500 },
+        "instructor": { "name": "Arjun Patel", "gender": "Male" },
+        "courseDuration": { "hours": 15, "lectures": 45 },
+        "coursePrice": 7999,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": true, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Full-Stack Development",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+
+    {
+        "course": "ReactJS Basics",
+        "courseName": "ReactJS for Beginners",
+        "courseDescription": "Learn the fundamentals of ReactJS and how to build dynamic web applications.",
+        "rating": { "stars": 4.6, "counts": 1400 },
+        "instructor": { "name": "Vikas Sharma", "gender": "Male" },
+        "courseDuration": { "hours": 7, "lectures": 25 },
+        "coursePrice": 4799,
+        "courseLevel": { "begginer": true, "intermediate": false, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "ReactJS Fundamentals",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Advanced ReactJS",
+        "courseName": "Mastering ReactJS",
+        "courseDescription": "Deep dive into ReactJS concepts like hooks, context API, and performance optimization.",
+        "rating": { "stars": 4.9, "counts": 2200 },
+        "instructor": { "name": "Sneha Agarwal", "gender": "Female" },
+        "courseDuration": { "hours": 13, "lectures": 40 },
+        "coursePrice": 7299,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": true, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Advanced ReactJS",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "ReactJS with Redux",
+        "courseName": "State Management in React",
+        "courseDescription": "Learn how to manage complex state in React applications using Redux.",
+        "rating": { "stars": 4.8, "counts": 1800 },
+        "instructor": { "name": "Amit Trivedi", "gender": "Male" },
+        "courseDuration": { "hours": 10, "lectures": 35 },
+        "coursePrice": 5999,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": false, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "React with Redux",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": false }
+    },
+    {
+        "course": "React Native for Mobile Apps",
+        "courseName": "Building Mobile Apps with React Native",
+        "courseDescription": "Use React Native to create cross-platform mobile applications.",
+        "rating": { "stars": 4.7, "counts": 2000 },
+        "instructor": { "name": "Riya Malhotra", "gender": "Female" },
+        "courseDuration": { "hours": 9, "lectures": 32 },
+        "coursePrice": 5699,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "React Native",
+        "courseFeatures": { "subtitle": true, "quizes": false, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Full-Stack Development with React and Node.js",
+        "courseName": "React for Frontend and Node.js for Backend",
+        "courseDescription": "Learn how to build full-stack applications using ReactJS and Node.js.",
+        "rating": { "stars": 5.0, "counts": 2700 },
+        "instructor": { "name": "Harsh Vardhan", "gender": "Male" },
+        "courseDuration": { "hours": 18, "lectures": 50 },
+        "coursePrice": 8599,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": true, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Full-Stack Development with React",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+
+    {
+        "course": "MongoDB Basics",
+        "courseName": "Introduction to MongoDB",
+        "courseDescription": "Learn the fundamentals of MongoDB, a NoSQL database, and how to perform CRUD operations.",
+        "rating": { "stars": 4.6, "counts": 1200 },
+        "instructor": { "name": "Rohit Verma", "gender": "Male" },
+        "courseDuration": { "hours": 6, "lectures": 20 },
+        "coursePrice": 4599,
+        "courseLevel": { "begginer": true, "intermediate": false, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "MongoDB Fundamentals",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Advanced MongoDB",
+        "courseName": "Mastering MongoDB",
+        "courseDescription": "Deep dive into MongoDB concepts like aggregation, indexing, and performance tuning.",
+        "rating": { "stars": 4.8, "counts": 2000 },
+        "instructor": { "name": "Priya Kapoor", "gender": "Female" },
+        "courseDuration": { "hours": 12, "lectures": 35 },
+        "coursePrice": 6999,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": true, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Advanced MongoDB",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "MongoDB with Node.js",
+        "courseName": "Building Applications with MongoDB and Node.js",
+        "courseDescription": "Learn how to integrate MongoDB with Node.js for backend development.",
+        "rating": { "stars": 4.7, "counts": 1700 },
+        "instructor": { "name": "Sandeep Joshi", "gender": "Male" },
+        "courseDuration": { "hours": 10, "lectures": 30 },
+        "coursePrice": 5799,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": false, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "MongoDB with Node.js",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": false }
+    },
+    {
+        "course": "MongoDB for Data Analysis",
+        "courseName": "Using MongoDB for Data Science and Analytics",
+        "courseDescription": "Use MongoDB for handling large datasets and performing data analysis.",
+        "rating": { "stars": 4.6, "counts": 1900 },
+        "instructor": { "name": "Meera Iyer", "gender": "Female" },
+        "courseDuration": { "hours": 8, "lectures": 28 },
+        "coursePrice": 5299,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Data Analysis with MongoDB",
+        "courseFeatures": { "subtitle": true, "quizes": false, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Full-Stack Development with MongoDB",
+        "courseName": "MongoDB for MERN Stack Development",
+        "courseDescription": "Learn how to use MongoDB with Express, React, and Node.js for full-stack development.",
+        "rating": { "stars": 5.0, "counts": 2500 },
+        "instructor": { "name": "Arjun Bhatia", "gender": "Male" },
+        "courseDuration": { "hours": 15, "lectures": 45 },
+        "coursePrice": 7999,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": true, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Full-Stack Development with MongoDB",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+
+    {
+        "course": "Node.js Basics",
+        "courseName": "Introduction to Node.js",
+        "courseDescription": "Learn the fundamentals of Node.js, its event-driven architecture, and how to build backend applications.",
+        "rating": { "stars": 4.6, "counts": 1300 },
+        "instructor": { "name": "Ravi Sharma", "gender": "Male" },
+        "courseDuration": { "hours": 7, "lectures": 22 },
+        "coursePrice": 4799,
+        "courseLevel": { "begginer": true, "intermediate": false, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Node.js Fundamentals",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Advanced Node.js",
+        "courseName": "Mastering Node.js",
+        "courseDescription": "Deep dive into Node.js concepts like streams, buffers, and performance optimization.",
+        "rating": { "stars": 4.9, "counts": 2100 },
+        "instructor": { "name": "Neha Mehta", "gender": "Female" },
+        "courseDuration": { "hours": 14, "lectures": 38 },
+        "coursePrice": 7399,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": true, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Advanced Node.js",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Node.js with Express",
+        "courseName": "Building Web Applications with Node.js and Express",
+        "courseDescription": "Learn how to build scalable web applications using Node.js and Express framework.",
+        "rating": { "stars": 4.8, "counts": 1850 },
+        "instructor": { "name": "Amit Kapoor", "gender": "Male" },
+        "courseDuration": { "hours": 11, "lectures": 33 },
+        "coursePrice": 5999,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": false, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Node.js with Express",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": false }
+    },
+    {
+        "course": "Node.js for APIs",
+        "courseName": "RESTful API Development with Node.js",
+        "courseDescription": "Learn how to build and deploy RESTful APIs using Node.js and Express.",
+        "rating": { "stars": 4.7, "counts": 1950 },
+        "instructor": { "name": "Ritika Iyer", "gender": "Female" },
+        "courseDuration": { "hours": 9, "lectures": 30 },
+        "coursePrice": 5699,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "API Development with Node.js",
+        "courseFeatures": { "subtitle": true, "quizes": false, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Full-Stack Development with Node.js",
+        "courseName": "Node.js for MERN Stack Development",
+        "courseDescription": "Learn how to use Node.js with MongoDB, React, and Express for full-stack development.",
+        "rating": { "stars": 5.0, "counts": 2600 },
+        "instructor": { "name": "Vikram Choudhary", "gender": "Male" },
+        "courseDuration": { "hours": 16, "lectures": 48 },
+        "coursePrice": 8499,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": true, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Full-Stack Development with Node.js",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+
+    {
+        "course": "Express.js Basics",
+        "courseName": "Introduction to Express.js",
+        "courseDescription": "Learn the fundamentals of Express.js, a web application framework for Node.js.",
+        "rating": { "stars": 4.6, "counts": 1400 },
+        "instructor": { "name": "Rajesh Kumar", "gender": "Male" },
+        "courseDuration": { "hours": 6, "lectures": 18 },
+        "coursePrice": 4599,
+        "courseLevel": { "begginer": true, "intermediate": false, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Express.js Fundamentals",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Advanced Express.js",
+        "courseName": "Mastering Express.js",
+        "courseDescription": "Deep dive into Express.js features such as middleware, authentication, and performance optimization.",
+        "rating": { "stars": 4.9, "counts": 2200 },
+        "instructor": { "name": "Sneha Agarwal", "gender": "Female" },
+        "courseDuration": { "hours": 12, "lectures": 34 },
+        "coursePrice": 7299,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": true, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Advanced Express.js",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Express.js with MongoDB",
+        "courseName": "Building REST APIs with Express.js and MongoDB",
+        "courseDescription": "Learn how to build scalable REST APIs using Express.js and MongoDB.",
+        "rating": { "stars": 4.8, "counts": 1900 },
+        "instructor": { "name": "Amitabh Saxena", "gender": "Male" },
+        "courseDuration": { "hours": 10, "lectures": 28 },
+        "coursePrice": 5899,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": false, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Express.js with MongoDB",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": false }
+    },
+    {
+        "course": "Express.js for Authentication",
+        "courseName": "Authentication and Security with Express.js",
+        "courseDescription": "Learn how to implement authentication and security best practices in Express.js applications.",
+        "rating": { "stars": 4.7, "counts": 2000 },
+        "instructor": { "name": "Priya Malhotra", "gender": "Female" },
+        "courseDuration": { "hours": 8, "lectures": 25 },
+        "coursePrice": 5699,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Express.js Security and Authentication",
+        "courseFeatures": { "subtitle": true, "quizes": false, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Full-Stack Development with Express.js",
+        "courseName": "Building Full-Stack Apps with Express.js and React",
+        "courseDescription": "Learn how to use Express.js with React, MongoDB, and Node.js for full-stack development.",
+        "rating": { "stars": 5.0, "counts": 2700 },
+        "instructor": { "name": "Sandeep Desai", "gender": "Male" },
+        "courseDuration": { "hours": 15, "lectures": 45 },
+        "coursePrice": 8299,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": true, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Full-Stack Development with Express.js",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Bootstrap Basics",
+        "courseName": "Introduction to Bootstrap",
+        "courseDescription": "Learn the fundamentals of Bootstrap, the popular front-end framework for responsive web design.",
+        "rating": { "stars": 4.6, "counts": 1500 },
+        "instructor": { "name": "Ramesh Verma", "gender": "Male" },
+        "courseDuration": { "hours": 5, "lectures": 15 },
+        "coursePrice": 3999,
+        "courseLevel": { "begginer": true, "intermediate": false, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Bootstrap Fundamentals",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Advanced Bootstrap",
+        "courseName": "Mastering Bootstrap",
+        "courseDescription": "Deep dive into Bootstrap components, grid systems, and customization techniques.",
+        "rating": { "stars": 4.8, "counts": 2000 },
+        "instructor": { "name": "Meera Sharma", "gender": "Female" },
+        "courseDuration": { "hours": 10, "lectures": 30 },
+        "coursePrice": 5999,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Advanced Bootstrap",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Bootstrap with JavaScript",
+        "courseName": "Interactive Web Development with Bootstrap and JavaScript",
+        "courseDescription": "Learn how to integrate Bootstrap with JavaScript to create dynamic and interactive web pages.",
+        "rating": { "stars": 4.7, "counts": 1800 },
+        "instructor": { "name": "Vikrant Choudhary", "gender": "Male" },
+        "courseDuration": { "hours": 8, "lectures": 25 },
+        "coursePrice": 5299,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": false, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Bootstrap with JavaScript",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": false }
+    },
+    {
+        "course": "Bootstrap for UI/UX Design",
+        "courseName": "Creating Beautiful UI/UX with Bootstrap",
+        "courseDescription": "Learn how to use Bootstrap to design visually appealing and user-friendly interfaces.",
+        "rating": { "stars": 4.9, "counts": 2200 },
+        "instructor": { "name": "Pooja Nair", "gender": "Female" },
+        "courseDuration": { "hours": 9, "lectures": 27 },
+        "coursePrice": 5799,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Bootstrap UI/UX Design",
+        "courseFeatures": { "subtitle": true, "quizes": false, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Bootstrap for Full-Stack Development",
+        "courseName": "Building Full-Stack Web Applications with Bootstrap",
+        "courseDescription": "Learn how to use Bootstrap in full-stack web development with frameworks like React and Node.js.",
+        "rating": { "stars": 5.0, "counts": 2500 },
+        "instructor": { "name": "Sanjay Gupta", "gender": "Male" },
+        "courseDuration": { "hours": 12, "lectures": 40 },
+        "coursePrice": 7999,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": true, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Full-Stack Development with Bootstrap",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+
+    {
+        "course": "Tailwind CSS Basics",
+        "courseName": "Introduction to Tailwind CSS",
+        "courseDescription": "Learn the fundamentals of Tailwind CSS, a utility-first CSS framework for rapid UI development.",
+        "rating": { "stars": 4.7, "counts": 1600 },
+        "instructor": { "name": "Arjun Mehta", "gender": "Male" },
+        "courseDuration": { "hours": 6, "lectures": 18 },
+        "coursePrice": 4299,
+        "courseLevel": { "begginer": true, "intermediate": false, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Tailwind CSS Fundamentals",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Advanced Tailwind CSS",
+        "courseName": "Mastering Tailwind CSS",
+        "courseDescription": "Deep dive into Tailwind CSS, including advanced styling techniques and customization.",
+        "rating": { "stars": 4.9, "counts": 2100 },
+        "instructor": { "name": "Neha Reddy", "gender": "Female" },
+        "courseDuration": { "hours": 9, "lectures": 28 },
+        "coursePrice": 5999,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Advanced Tailwind CSS",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Tailwind CSS with JavaScript",
+        "courseName": "Building Interactive UI with Tailwind CSS and JavaScript",
+        "courseDescription": "Learn how to integrate Tailwind CSS with JavaScript for dynamic web pages.",
+        "rating": { "stars": 4.8, "counts": 1900 },
+        "instructor": { "name": "Ravi Sharma", "gender": "Male" },
+        "courseDuration": { "hours": 7, "lectures": 24 },
+        "coursePrice": 5499,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": false, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Tailwind CSS with JavaScript",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": false }
+    },
+    {
+        "course": "Tailwind CSS for UI/UX Design",
+        "courseName": "Creating Modern UI/UX with Tailwind CSS",
+        "courseDescription": "Learn how to design stunning and responsive user interfaces with Tailwind CSS.",
+        "rating": { "stars": 5.0, "counts": 2300 },
+        "instructor": { "name": "Ananya Joshi", "gender": "Female" },
+        "courseDuration": { "hours": 10, "lectures": 30 },
+        "coursePrice": 6199,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Tailwind CSS UI/UX Design",
+        "courseFeatures": { "subtitle": true, "quizes": false, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Full-Stack Development with Tailwind CSS",
+        "courseName": "Building Full-Stack Apps with Tailwind CSS",
+        "courseDescription": "Learn how to integrate Tailwind CSS in full-stack applications with React and Node.js.",
+        "rating": { "stars": 5.0, "counts": 2600 },
+        "instructor": { "name": "Rohit Kapoor", "gender": "Male" },
+        "courseDuration": { "hours": 14, "lectures": 42 },
+        "coursePrice": 8499,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": true, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Full-Stack Development with Tailwind CSS",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Material UI Essentials",
+        "courseName": "Getting Started with Material UI",
+        "courseDescription": "A beginner-friendly course covering the basics of Material UI and its core components.",
+        "rating": { "stars": 4.6, "counts": 1500 },
+        "instructor": { "name": "Amit Trivedi", "gender": "Male" },
+        "courseDuration": { "hours": 5, "lectures": 15 },
+        "coursePrice": 3999,
+        "courseLevel": { "begginer": true, "intermediate": false, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": false, "newest": true, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Material UI Basics",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": false }
+    },
+    {
+        "course": "Material UI Advanced",
+        "courseName": "Mastering Material UI Components",
+        "courseDescription": "An advanced course on customizing and optimizing Material UI for professional projects.",
+        "rating": { "stars": 4.8, "counts": 2100 },
+        "instructor": { "name": "Pooja Malhotra", "gender": "Female" },
+        "courseDuration": { "hours": 8, "lectures": 25 },
+        "coursePrice": 5799,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Advanced Material UI",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Material UI & React",
+        "courseName": "Building React Apps with Material UI",
+        "courseDescription": "Learn how to efficiently integrate Material UI with React for seamless UI development.",
+        "rating": { "stars": 4.7, "counts": 1800 },
+        "instructor": { "name": "Suresh Verma", "gender": "Male" },
+        "courseDuration": { "hours": 6, "lectures": 20 },
+        "coursePrice": 4899,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": false, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Material UI with React",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": false }
+    },
+    {
+        "course": "Material UI for Designers",
+        "courseName": "Creating Beautiful UI/UX with Material UI",
+        "courseDescription": "A specialized course for designers focusing on Material UI’s typography, color, and layout features.",
+        "rating": { "stars": 4.9, "counts": 2300 },
+        "instructor": { "name": "Anjali Sharma", "gender": "Female" },
+        "courseDuration": { "hours": 9, "lectures": 27 },
+        "coursePrice": 6299,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Material UI for UI/UX Design",
+        "courseFeatures": { "subtitle": true, "quizes": false, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "Full-Stack Apps with Material UI",
+        "courseName": "Material UI for Full-Stack Development",
+        "courseDescription": "Master Material UI in full-stack applications using React, Node.js, and Express.",
+        "rating": { "stars": 5.0, "counts": 2600 },
+        "instructor": { "name": "Rajat Kapoor", "gender": "Male" },
+        "courseDuration": { "hours": 12, "lectures": 38 },
+        "coursePrice": 7999,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": true, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Full-Stack Development with Material UI",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "MERN Stack Essentials",
+        "courseName": "Getting Started with MERN Stack",
+        "courseDescription": "A beginner-friendly course covering the fundamentals of MongoDB, Express.js, React, and Node.js.",
+        "rating": { "stars": 4.7, "counts": 1800 },
+        "instructor": { "name": "Rahul Mehta", "gender": "Male" },
+        "courseDuration": { "hours": 6, "lectures": 20 },
+        "coursePrice": 4999,
+        "courseLevel": { "begginer": true, "intermediate": false, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": false, "newest": true, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "MERN Stack Basics",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": false }
+    },
+    {
+        "course": "MERN Stack Advanced",
+        "courseName": "Mastering Full-Stack Development with MERN",
+        "courseDescription": "An advanced course covering authentication, deployment, and best practices in MERN stack applications.",
+        "rating": { "stars": 4.9, "counts": 2300 },
+        "instructor": { "name": "Ananya Roy", "gender": "Female" },
+        "courseDuration": { "hours": 10, "lectures": 30 },
+        "coursePrice": 6999,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Advanced MERN Stack",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "MERN Stack Project Development",
+        "courseName": "Building Real-World Applications with MERN",
+        "courseDescription": "Learn to build a fully functional web application using the MERN stack from scratch.",
+        "rating": { "stars": 4.8, "counts": 2000 },
+        "instructor": { "name": "Vikas Sharma", "gender": "Male" },
+        "courseDuration": { "hours": 8, "lectures": 25 },
+        "coursePrice": 5999,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": false, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "MERN Stack Project Development",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": false }
+    },
+    {
+        "course": "Full-Stack Authentication with MERN",
+        "courseName": "Implementing Secure Authentication in MERN Applications",
+        "courseDescription": "A specialized course focusing on JWT authentication, OAuth, and security best practices in MERN stack.",
+        "rating": { "stars": 4.9, "counts": 2200 },
+        "instructor": { "name": "Priya Nair", "gender": "Female" },
+        "courseDuration": { "hours": 9, "lectures": 28 },
+        "coursePrice": 6499,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": false, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "Authentication with MERN Stack",
+        "courseFeatures": { "subtitle": true, "quizes": false, "codingExercise": true, "practiceTest": true }
+    },
+    {
+        "course": "MERN Stack Deployment",
+        "courseName": "Deploying MERN Applications to the Cloud",
+        "courseDescription": "Learn how to deploy MERN stack applications on AWS, Heroku, and Vercel with CI/CD pipelines.",
+        "rating": { "stars": 5.0, "counts": 2500 },
+        "instructor": { "name": "Sandeep Choudhary", "gender": "Male" },
+        "courseDuration": { "hours": 11, "lectures": 35 },
+        "coursePrice": 7499,
+        "courseLevel": { "begginer": false, "intermediate": true, "export": true, "allLevel": false },
+        "courseTag": { "bestSeller": true, "newest": false, "popular": true },
+        "courseType": { "paid": true, "free": false },
+        "courseTopic": "MERN Stack Deployment",
+        "courseFeatures": { "subtitle": true, "quizes": true, "codingExercise": true, "practiceTest": true }
+    }
+]
+
