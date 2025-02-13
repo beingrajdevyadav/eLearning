@@ -7,3 +7,31 @@
     box-sizing: border-box;
     font-family: "Poppins", serif;
 }
+
+body {
+    padding: 1rem;
+    background-color: #f1f1f1;
+    color: #444;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+main{
+    padding: 20px;
+}
+footer{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
