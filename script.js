@@ -11,13 +11,37 @@ async function fetchData() {
             throw new Error("Network response was not ok!")
         }
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
+        return data;
     } catch (error) {
         console.log("There was a problem with fetch operation : ", error)
     }
 }
 
+// ---------------------------------------------- 
+// Function To Remix Arrays 
+// ----------------------------------------------
+function remixData(arr) {
+    let remixedArr = arr.slice();
 
+    for (let i = remixedArr.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
 
+        [remixedArr[i], remixedArr[j]] = [remixedArr[j], remixedArr[i]];
+    };
 
+    return remixedArr;
+}
 
+// ---------------------------------------------- 
+// Function To Handle On window load
+// ---------------------------------------------- 
+
+window.addEventListener("load", function () {
+    fetchData()
+        .then(data => {
+            console.log(data);
+let printingData = remixData(data);
+console.log(printingData);
+        })
+})
