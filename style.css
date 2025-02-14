@@ -24,10 +24,58 @@ header {
     align-items: center;
     gap: 10px;
 }
-main{
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo a {
+    color: #444;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: #444;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #444;
+    margin: 4px;
+    transition: all 0.3s;
+}
+
+
+
+main {
     padding: 20px;
 }
-footer{
+
+footer {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
