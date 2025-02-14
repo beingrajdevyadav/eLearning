@@ -34,14 +34,33 @@ function remixData(arr) {
 }
 
 // ---------------------------------------------- 
+// Function To Display Courses 
+// ---------------------------------------------- 
+function displayCourses(courses){
+
+    const coursesDiv = document.querySelector("#courses");
+let html = '';
+    courses.forEach(course=>{
+         html += `
+        <h3>${course.course}</h3>
+        `;
+    });
+
+    coursesDiv.innerHTML = html;
+}
+
+
+
+// ---------------------------------------------- 
 // Function To Handle On window load
 // ---------------------------------------------- 
 
 window.addEventListener("load", function () {
     fetchData()
         .then(data => {
-            console.log(data);
-let printingData = remixData(data);
-console.log(printingData);
+            // console.log(data);
+            let printingData = remixData(data);
+            console.log(printingData);
+            // displayCourses(printingData);
         })
 })
