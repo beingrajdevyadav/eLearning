@@ -1,4 +1,26 @@
 console.log("👨‍💻 Jai Shree Shyam Baba ❤🙏");
+// ---------------------------------------------- 
+//            Navbar Functionality 
+// ---------------------------------------------- 
+
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav-links');
+const navLinks = document.querySelectorAll('.nav-links li');
+
+burger.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+    burger.classList.toggle('toggle');
+    navLinks.forEach((link, index) => {
+        if (link.style.animation) {
+            link.style.animation = '';
+        } else {
+            link.style.animation = `navLinkFade 0.5s ease forwards 
+${index / 7 + 0.3}s`;
+        }
+    });
+});
+
+
 
 // ---------------------------------------------- 
 // Function To Fetch Data From data.json file
@@ -36,12 +58,12 @@ function remixData(arr) {
 // ---------------------------------------------- 
 // Function To Display Courses 
 // ---------------------------------------------- 
-function displayCourses(courses){
+function displayCourses(courses) {
 
     const coursesDiv = document.querySelector("#courses");
-let html = '';
-    courses.forEach(course=>{
-         html += `
+    let html = '';
+    courses.forEach(course => {
+        html += `
         <h3>${course.course}</h3>
         `;
     });
