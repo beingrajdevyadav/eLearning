@@ -86,19 +86,22 @@ function handleRatings(rating) {
   
     // Create stars
     const starsDiv = document.createElement('div');
+    starsDiv.style.display = 'inline-block';
+    starsDiv.style.fontSize = '20px';
+    starsDiv.style.marginRight = '5px';
     const fullStars = Math.floor(rating.stars);
     const halfStar = rating.stars % 1 >= 0.5;
     
     for (let i = 0; i < 5; i++) {
       const star = document.createElement('span');
       if (i < fullStars) {
-        star.innerHTML = '★';  // Full star
-        star.style.color = 'gold';
+        star.innerHTML = `<i class="fa-solid fa-star"></i> `;  // Full star
+        star.style.color = '#c4213c';
       } else if (halfStar && i === fullStars) {
-        star.innerHTML = '☆';  // Half star, using empty star here for simplicity
-        star.style.color = 'gold';
+        star.innerHTML = `<i class="fa-solid fa-star-half-stroke"></i> `;  // Half star, using empty star here for simplicity
+        star.style.color = '#c4213c';
       } else {
-        star.innerHTML = '☆';  // Empty star
+        star.innerHTML = `<i class="fa-solid fa-star"></i> `;  // Empty star
         star.style.color = 'grey';
       }
       starsDiv.appendChild(star);
@@ -107,13 +110,13 @@ function handleRatings(rating) {
     container.appendChild(starsDiv);
   
     // Create counts
-    const countsDiv = document.createElement('div');
-    countsDiv.innerHTML = `(${rating.counts})`;
-    countsDiv.style.marginTop = '5px';
-    countsDiv.style.fontSize = '12px';
-    countsDiv.style.color = 'grey';
+    const countsSpan = document.createElement('span');
+    countsSpan.innerHTML = `(${rating.counts})`;
+    countsSpan.style.marginTop = '5px';
+    countsSpan.style.fontSize = '12px';
+    countsSpan.style.color = 'grey';
   
-    container.appendChild(countsDiv);
+    container.appendChild(countsSpan);
   
     return container;
   }
