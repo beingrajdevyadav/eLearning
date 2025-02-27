@@ -23,6 +23,9 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    background-color: #c4213c;
+    background-image: linear-gradient(to right, #c4213c, #95172c);
+    height: 20vh;
 }
 
 .navbar {
@@ -34,14 +37,82 @@ header {
 }
 
 .logo a {
-    color: #444;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
+    color: #fff;
+
 }
 
 main {
     padding: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.course {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 30%;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px #00000044;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .5s ease;
+}
+
+.course:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px #0000006f;
+    cursor: pointer;
+}
+
+.course p {
+    font-size: 14px;
+    margin: .5rem 0;
+}
+
+.course .cd {
+    display: flex;
+    justify-content: start;
+    gap: 45%;
+}
+
+.course .course-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .3rem;
+}
+
+.course-control button {
+    padding: .5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #c4213c;
+    color: #fff;
+    font-size: 14px;
+    /* font-weight: bold; */
+    transition: all .5s ease;
+
+}
+
+.course-control button:hover {
+    background-color: #95172c;
 }
 
 footer {
@@ -50,6 +121,5 @@ footer {
     border-radius: 5px;
     text-align: center;
     font-size: 12px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-

@@ -1,26 +1,4 @@
 console.log("👨‍💻 Jai Shree Shyam Baba ❤🙏");
-// ---------------------------------------------- 
-//            Navbar Functionality 
-// ---------------------------------------------- 
-
-const burger = document.querySelector('.burger');
-const nav = document.querySelector('.nav-links');
-const navLinks = document.querySelectorAll('.nav-links li');
-
-burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-active');
-    burger.classList.toggle('toggle');
-    navLinks.forEach((link, index) => {
-        if (link.style.animation) {
-            link.style.animation = '';
-        } else {
-            link.style.animation = `navLinkFade 0.5s ease forwards 
-${index / 7 + 0.3}s`;
-        }
-    });
-});
-
-
 
 // ---------------------------------------------- 
 // Function To Fetch Data From data.json file
@@ -64,7 +42,31 @@ function displayCourses(courses) {
     let html = '';
     courses.forEach(course => {
         html += `
-        <h3>${course.course}</h3>
+        <div class="course">
+                <!-- header  -->
+                <div class="course-header">
+                    <h3>${course.course}</h3>
+                    <hr>
+                </div>
+                <!-- body -->
+                <div class="course-body">
+                    <p>${course.courseDescription}</p>
+                    <p class="cd"> <span>${course.courseDuration.hours}hrs</span>
+                        <span>${course.courseDuration.lectures} lectures</span>
+                    </p>
+                    <p>By ${course.instructor.name}</p>
+
+                </div>
+                <!-- footer -->
+                <div class="course-footer">
+                    <hr>
+                    <div class="course-control">
+                        <button>View Details </button>
+                        <button>Enroll Now</button>
+                    </div>
+
+                </div>
+            </div>
         `;
     });
 
@@ -83,6 +85,6 @@ window.addEventListener("load", function () {
             // console.log(data);
             let printingData = remixData(data);
             console.log(printingData);
-            // displayCourses(printingData);
+            displayCourses(printingData.slice(0, 9));
         })
 })
