@@ -46,13 +46,15 @@ function displayCourses(courses) {
                 <!-- header  -->
                 <div class="course-header">
                     <h3>${course.course}</h3>
-                    <hr>
+                    
                 </div>
                 <!-- body -->
                 <div class="course-body">
+                <hr>
                     <p>${course.courseDescription}</p>
-                    <p class="cd"> <span>${course.courseDuration.hours}hrs</span>
-                        <span>${course.courseDuration.lectures} lectures</span>
+                    <p> ${handleRatings(course.rating).outerHTML}</p>
+                    <p class="cd"> <span><i class="fa-solid fa-clock-rotate-left"></i>  ${course.courseDuration.hours}hrs</span>
+                        <span><i class="fa-solid fa-person-chalkboard"></i>  ${course.courseDuration.lectures} lectures</span>
                     </p>
                     <p>By ${course.instructor.name}</p>
 
@@ -73,7 +75,51 @@ function displayCourses(courses) {
     coursesDiv.innerHTML = html;
 }
 
+// ---------------------------------------------- 
+// Function To Handle Rating UI
+// ---------------------------------------------- 
 
+function handleRatings(rating) {
+    // Create a container div
+    const container = document.createElement('div');
+    container.style.display = 'inline-block';
+  
+    // Create stars
+    const starsDiv = document.createElement('div');
+    const fullStars = Math.floor(rating.stars);
+    const halfStar = rating.stars % 1 >= 0.5;
+    
+    for (let i = 0; i < 5; i++) {
+      const star = document.createElement('span');
+      if (i < fullStars) {
+        star.innerHTML = '★';  // Full star
+        star.style.color = 'gold';
+      } else if (halfStar && i === fullStars) {
+        star.innerHTML = '☆';  // Half star, using empty star here for simplicity
+        star.style.color = 'gold';
+      } else {
+        star.innerHTML = '☆';  // Empty star
+        star.style.color = 'grey';
+      }
+      starsDiv.appendChild(star);
+    }
+  
+    container.appendChild(starsDiv);
+  
+    // Create counts
+    const countsDiv = document.createElement('div');
+    countsDiv.innerHTML = `(${rating.counts})`;
+    countsDiv.style.marginTop = '5px';
+    countsDiv.style.fontSize = '12px';
+    countsDiv.style.color = 'grey';
+  
+    container.appendChild(countsDiv);
+  
+    return container;
+  }
+  
+  
+  
 
 // ---------------------------------------------- 
 // Function To Handle On window load
