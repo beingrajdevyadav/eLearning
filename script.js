@@ -95,6 +95,18 @@ function searchCourses() {
         );
     });
 
+    if(searchResult.length === 0){
+
+        document.querySelector("#courses").innerHTML = `       <div class="error-img">
+        <img src="https://static.vecteezy.com/system/resources/previews/004/971/619/non_2x/man-work-computer-freelance-programmer-and-deadline-designer-late-with-execution-order-online-education-on-internet-vector.jpg" alt="">
+
+        <h3>Something went wrong!</h3>
+       </div>`;
+
+       document.querySelector("#searchInput").value = '';
+        return;
+    }
+
     console.log(searchResult);
     displayCourses(searchResult);
     document.querySelector("#searchInput").value = '';

@@ -87,6 +87,14 @@ main {
 
 }
 
+.error-img{
+    width: 250px;
+    margin: 2rem auto;
+}
+.error-img img {
+    width: 100%;
+}
+
 .course {
     border: 1px solid #ddd;
     border-radius: 5px;
