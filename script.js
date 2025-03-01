@@ -107,7 +107,7 @@ function searchCourses() {
         return;
     }
 
-    console.log(searchResult);
+    // console.log(searchResult);
     displayCourses(searchResult);
     document.querySelector("#searchInput").value = '';
 }
