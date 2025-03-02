@@ -176,7 +176,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    /* display: none; */
+    display: none;
     /* Hide By Default */
 
 }
@@ -244,7 +244,7 @@ main {
     text-align: center;
 }
 .bio{
-    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 .bio p {
     margin: .5rem 0;
@@ -307,5 +307,13 @@ footer p {
     .course {
         width: 100%;
         background-color: #fff;
+    }
+    .modal-content{
+        width: 95%;
+    }
+    .ac-header{
+        min-height: 50vh;
+        height: auto;
+        padding-top: 1rem;
     }
 }

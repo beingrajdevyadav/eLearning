@@ -91,21 +91,24 @@ function enableViewCourse(courses) {
     const viewCourseBtns = document.querySelectorAll(".view-course");
     const modal = document.getElementById("courseModal");
     const closeBtn = document.getElementById("closeModal");
+    const activeCourse = document.getElementById("activeCourse");
     // console.log(viewCourseBtns);
 
     viewCourseBtns.forEach((btn, i) => {
         btn.addEventListener("click", function () {
             modal.style.display = "flex"; // to display course modal
-           console.log(courses[i]);
+            console.log(courses[i]);
+            let ui = createCourseUI(courses[i]);
+            activeCourse.innerHTML = ui;
         });
     });
 
-    closeBtn.addEventListener("click", function(){
+    closeBtn.addEventListener("click", function () {
         modal.style.display = "none"; // to hide course modal
     });
 
-    window.addEventListener("click", function(e){
-        if(e.target === modal){
+    window.addEventListener("click", function (e) {
+        if (e.target === modal) {
             modal.style.display = "none";
         }
     })
@@ -114,7 +117,82 @@ function enableViewCourse(courses) {
 // ---------------------------------------------- 
 // Function To Generate Course Details / Report
 // ----------------------------------------------
+function createCourseUI(course) {
+    let ui = `
+                
+                    <div class="ac-header">
+                        <div>
+                            <h2>🎯 ${course.course}</h2>
+                            <hr>
+                            <p> Learn the fundamentals of HTML and create your first webpage.</p>
+                        </div>
 
+                        <div>
+                            <ul>
+                                <li> <b>Course Price :</b> ${course.coursePrice} Rs /- </li>
+                                <li> <b>Course Duration :</b> ${course.courseDuration.hours} hours</li>
+                                <li><b>Total Lectures :</b> ${course.courseDuration.lectures} lectures</li>
+                            </ul>
+                        </div>
+
+
+                        <div>
+                            <button>Enroll Now</button>
+                        </div>
+                    </div>
+                    <div class="ac-body">
+
+                        <div class="benefit">
+                            <div class="icon"></div>
+                            <h3>Unlock Your Potential</h3>
+                            <p>this course is your gateway to mastering new skills and transforming your future. Start
+                                learning today!</p>
+                        </div>
+
+                        <ul>
+                            <li>Coding Challenges</li>
+                            <li>Code Review System</li>
+                            <li>Real-World Projects</li>
+                            <li>Progress Tacking Dashboard</li>
+                            <li>Code Snippet Library</li>
+                            <li>Cloud-Based Code Editor</li>
+                            <li> 24/7 Support Chatbot </li>
+                        </ul>
+
+                    </div>
+                    <div class="ac-footer">
+                        <hr>
+
+                        <div class="instructor">
+<div class="bio">
+                                <img src="./media/${course.instructor.gender == "Male" ? "male":"female"}.jpg" alt="">
+                                <p>"Learning is not the product of teaching. <br> Learning is the product of the
+                                    activity of
+                                    learners." <br> - John Holt</p>
+                                <h3>${course.instructor.name}</h3>
+                            </div>
+
+                            <div class="info">
+                                <h3>About Your Instructor</h3>
+                                <p>Get ready to learn from <b>${course.instructor.name}</b>  , a passionate expert in <b>${course.course}</b>  . Known for making
+                                    complex
+                                    topics simple and engaging, they are here to guide, inspire, and help you succeed.
+                                    🎯🙌
+                                </p>
+
+                                <p>⛳ Let's dive in and make learning an exciting journey together! 👨‍💻 </p>
+
+                            </div>
+
+                            
+                        </div>
+
+                        <hr>
+                    </div>
+    `;
+
+    return ui;
+}
 // ---------------------------------------------- 
 // Function To Search Courses 
 // ---------------------------------------------- 
