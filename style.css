@@ -205,7 +205,7 @@ main {
     padding: 20px;
     background-image: linear-gradient(to left, #00000041, #c4213ce0), url('./media/course_bg.jpg');
     height: 40vh;
-    color: #ddd;
+    color: #eee;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -230,7 +230,12 @@ main {
 .ac-header button:hover{
     background-color: #95172c;
 }
-
+.ac-body{
+    padding: 1rem;
+}
+.ac-body ul{
+    padding: 2rem;
+}
 .ac-footer{
     padding: 1rem;
 }
@@ -238,7 +243,9 @@ main {
 .instructor .bio {
     text-align: center;
 }
-
+.bio{
+    padding-bottom: 1rem;
+}
 .bio p {
     margin: .5rem 0;
     font-size: 14px;
