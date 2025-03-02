@@ -81,22 +81,22 @@ function displayCourses(courses) {
     coursesDiv.innerHTML = html;
 
     // to enable view course button functionality after each renderings
-    enableViewCourse();
+    enableViewCourse(courses);
 }
 
 // ---------------------------------------------- 
 // Function To Handle View Course Button
 // ---------------------------------------------- 
-function enableViewCourse() {
+function enableViewCourse(courses) {
     const viewCourseBtns = document.querySelectorAll(".view-course");
     const modal = document.getElementById("courseModal");
     const closeBtn = document.getElementById("closeModal");
     // console.log(viewCourseBtns);
 
-    viewCourseBtns.forEach(btn => {
+    viewCourseBtns.forEach((btn, i) => {
         btn.addEventListener("click", function () {
             modal.style.display = "flex"; // to display course modal
-           
+           console.log(courses[i]);
         });
     });
 
@@ -111,6 +111,9 @@ function enableViewCourse() {
     })
 }
 
+// ---------------------------------------------- 
+// Function To Generate Course Details / Report
+// ----------------------------------------------
 
 // ---------------------------------------------- 
 // Function To Search Courses 

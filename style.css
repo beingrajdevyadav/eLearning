@@ -175,7 +175,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
+    padding: 1rem;
+    /* display: none; */
     /* Hide By Default */
 
 }
@@ -183,10 +184,12 @@ main {
 /* Modal Content */
 .modal-content {
     background-color: #fff;
-    padding: 20px;
     border-radius: 5px;
-    width: 50%;
+    width: 40%;
     position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 95vh;
 }
 
 /* Close Button */
@@ -198,6 +201,44 @@ main {
     cursor: pointer;
 }
 
+.ac-header{
+    padding: 20px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    gap: 10px;
+    background-image: linear-gradient(to left, #00000041, #c4213ce0), url('./media/course_bg.jpg');
+   
+    height: 40vh;
+    color: #ddd;
+    background-position: center;
+    background-size: cover;
+}
+/* Instructor */
+.instructor .bio {
+    text-align: center;
+}
+
+.bio p {
+    margin: .5rem 0;
+    font-size: 14px;
+}
+
+.bio img {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px #00000044;
+    padding: .3rem;
+}
+
+.instructor .info {
+    margin: 1rem 0;
+}
+.info p{
+    font-size: 14px;
+    margin: 1rem 0;
+}
 footer {
     background-color: #fff;
     padding: 20px;
