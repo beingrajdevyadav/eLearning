@@ -201,7 +201,7 @@ main {
     cursor: pointer;
 }
 
-.ac-header{
+.ac-header {
     padding: 20px;
     background-image: linear-gradient(to left, #00000041, #c4213ce0), url('./media/course_bg.jpg');
     height: 40vh;
@@ -213,10 +213,12 @@ main {
     align-items: center;
     flex-direction: column;
 }
-.ac-header p{
+
+.ac-header p {
     margin: .5rem 0;
 }
-.ac-header button{
+
+.ac-header button {
     padding: .5rem;
     cursor: pointer;
     border: none;
@@ -227,25 +229,32 @@ main {
     /* font-weight: bold; */
     transition: all .5s ease;
 }
-.ac-header button:hover{
+
+.ac-header button:hover {
     background-color: #95172c;
 }
-.ac-body{
+
+.ac-body {
     padding: 1rem;
 }
-.ac-body ul{
+
+.ac-body ul {
     padding: 2rem;
 }
-.ac-footer{
+
+.ac-footer {
     padding: 1rem;
 }
+
 /* Instructor */
 .instructor .bio {
     text-align: center;
 }
-.bio{
+
+.bio {
     padding-top: 1rem;
 }
+
 .bio p {
     margin: .5rem 0;
     font-size: 14px;
@@ -261,17 +270,20 @@ main {
 .instructor .info {
     margin: 1rem 0;
 }
-.info p{
+
+.info p {
     font-size: 14px;
     margin: 1rem 0;
 }
+
 footer {
-    background-color: #fff;
+    color: #fff;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
     font-size: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to left, #95172c,#c4213c );
 }
 
 footer p {
@@ -308,10 +320,12 @@ footer p {
         width: 100%;
         background-color: #fff;
     }
-    .modal-content{
+
+    .modal-content {
         width: 95%;
     }
-    .ac-header{
+
+    .ac-header {
         min-height: 50vh;
         height: auto;
         padding-top: 1rem;
