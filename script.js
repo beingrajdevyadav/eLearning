@@ -69,7 +69,7 @@ function displayCourses(courses) {
                 <div class="course-footer">
                     <hr>
                     <div class="course-control">
-                        <button>View Details </button>
+                        <button class="view-course">View Course </button>
                         <button>Enroll Now</button>
                     </div>
 
@@ -79,6 +79,36 @@ function displayCourses(courses) {
     });
 
     coursesDiv.innerHTML = html;
+
+    // to enable view course button functionality after each renderings
+    enableViewCourse();
+}
+
+// ---------------------------------------------- 
+// Function To Handle View Course Button
+// ---------------------------------------------- 
+function enableViewCourse() {
+    const viewCourseBtns = document.querySelectorAll(".view-course");
+    const modal = document.getElementById("courseModal");
+    const closeBtn = document.getElementById("closeModal");
+    // console.log(viewCourseBtns);
+
+    viewCourseBtns.forEach(btn => {
+        btn.addEventListener("click", function () {
+            modal.style.display = "flex"; // to display course modal
+           
+        });
+    });
+
+    closeBtn.addEventListener("click", function(){
+        modal.style.display = "none"; // to hide course modal
+    });
+
+    window.addEventListener("click", function(e){
+        if(e.target === modal){
+            modal.style.display = "none";
+        }
+    })
 }
 
 
@@ -95,7 +125,7 @@ function searchCourses() {
         );
     });
 
-    if(searchResult.length === 0){
+    if (searchResult.length === 0) {
 
         document.querySelector("#courses").innerHTML = `       <div class="error-img">
         <img src="https://static.vecteezy.com/system/resources/previews/004/971/619/non_2x/man-work-computer-freelance-programmer-and-deadline-designer-late-with-execution-order-online-education-on-internet-vector.jpg" alt="">
@@ -103,7 +133,7 @@ function searchCourses() {
         <h3>Something went wrong!</h3>
        </div>`;
 
-       document.querySelector("#searchInput").value = '';
+        document.querySelector("#searchInput").value = '';
         return;
     }
 
