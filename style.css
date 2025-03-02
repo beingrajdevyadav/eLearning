@@ -203,17 +203,36 @@ main {
 
 .ac-header{
     padding: 20px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    gap: 10px;
     background-image: linear-gradient(to left, #00000041, #c4213ce0), url('./media/course_bg.jpg');
-   
     height: 40vh;
     color: #ddd;
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.ac-header p{
+    margin: .5rem 0;
+}
+.ac-header button{
+    padding: .5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #c4213c;
+    color: #fff;
+    font-size: 14px;
+    /* font-weight: bold; */
+    transition: all .5s ease;
+}
+.ac-header button:hover{
+    background-color: #95172c;
+}
+
+.ac-footer{
+    padding: 1rem;
 }
 /* Instructor */
 .instructor .bio {
