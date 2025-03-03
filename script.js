@@ -70,7 +70,7 @@ function displayCourses(courses) {
                     <hr>
                     <div class="course-control">
                         <button class="view-course">View Course </button>
-                        <button>Enroll Now</button>
+                        <button class="enroll-now">Enroll Now</button>
                     </div>
 
                 </div>
@@ -82,6 +82,7 @@ function displayCourses(courses) {
 
     // to enable view course button functionality after each renderings
     enableViewCourse(courses);
+    enableEnrollNow(courses);
 }
 
 // ---------------------------------------------- 
@@ -97,7 +98,7 @@ function enableViewCourse(courses) {
     viewCourseBtns.forEach((btn, i) => {
         btn.addEventListener("click", function () {
             modal.style.display = "flex"; // to display course modal
-            console.log(courses[i]);
+            // console.log(courses[i]);
             let ui = createCourseUI(courses[i]);
             activeCourse.innerHTML = ui;
         });
@@ -193,6 +194,18 @@ function createCourseUI(course) {
 
     return ui;
 }
+
+// ---------------------------------------------- 
+// Function To Handle Enroll Button
+// ---------------------------------------------- 
+
+function enableEnrollNow(courses){
+    const enrollNowBtns = document.querySelectorAll(".enroll-now");
+    console.log(enrollNowBtns);
+    console.log(courses);
+}
+
+
 // ---------------------------------------------- 
 // Function To Search Courses 
 // ---------------------------------------------- 
