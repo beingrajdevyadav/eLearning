@@ -47,7 +47,60 @@
             <div class="enroll-content" id="enrollContent">
                 <span class="close" id="closeEnrollModal">&times;</span>
 
-                <div id="activeEnroll"></div>
+                <div id="activeEnroll">
+                    <!-- Student Details -->
+                    <h2>Enroll Now</h2>
+                    <form id="enrollForm">
+                        <div class="form-control">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter Your Name" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter Your Email" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" placeholder="Enter Your Phone" required>
+                        </div>
+                        <button type="submit" class="btn">Enroll</button>
+                    </form>
+
+                    <!-- Course Details -->
+                    <div id="activeCourseEnroll">
+                        <h3>Course Details</h3>
+                        <div class="course-details">
+                            <p><strong>Course: </strong><span id="courseName"></span></p>
+                            <p><strong>Instructor: </strong><span id="instructorName"></span></p>
+                            <p><strong>Price: </strong><span id="coursePrice"></span></p>
+                        </div>
+                    </div>
+
+                    <!-- Payment Details -->
+                    <div id="paymentDetails">
+                        <h3>Payment Details</h3>
+                        <div class="payment-details">
+                            <p><strong>Amount: </strong><span id="amount"></span></p>
+                            <p><strong>Discount: </strong><span id="discount"></span></p>
+                            <p><strong>Total: </strong><span id="total"></span></p>
+                        </div>
+                    </div>
+
+                    <!-- Apply Coupon Code  -->
+                    <div class="form-control">
+                        <label for="coupon">Coupon Code</label>
+                        <input type="text" id="coupon" placeholder="Enter Coupon Code">
+                        <button id="applyCoupon" class="btn">Apply</button>
+                    </div>
+
+                    <!-- Payment Gateway -->
+                    <div id="paymentGateway">
+                        <h3>Payment Gateway</h3>
+                        <div class="payment-gateway">
+                            <button id="payNow" class="btn">Pay Now</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

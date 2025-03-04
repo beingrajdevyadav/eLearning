@@ -295,6 +295,7 @@ main {
     background-color: #fff;
     border-radius: 5px;
     width: 40%;
+    height: 95vh;
     position: relative;
     overflow-x: hidden;
     overflow-y: auto;
