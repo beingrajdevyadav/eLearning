@@ -300,7 +300,18 @@ main {
     overflow-x: hidden;
     overflow-y: auto;
     max-height: 95vh;
-    padding: 1rem;
+    /* padding: 1rem; */
+}
+.ae-header{
+    padding: 20px;
+    background-image: linear-gradient(to left, #00000041, #c4213ce0), url('./media/enroll_bg.jpg');
+    height: 40vh;
+    color: #eee;
+    background-position: center;
+    background-size: cover;
+}
+.ae-header .course-details{
+    margin-top: 1rem;
 }
 footer {
     color: #fff;
