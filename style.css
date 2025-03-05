@@ -278,7 +278,7 @@ main {
 
 
 /* Enroll Now */
-.enroll-modal{
+.enroll-modal {
     /* display: none; */
     position: fixed;
     top: 0;
@@ -291,7 +291,8 @@ main {
     align-items: center;
     padding: 1rem;
 }
-.enroll-content{
+
+.enroll-content {
     background-color: #fff;
     border-radius: 5px;
     width: 40%;
@@ -302,7 +303,8 @@ main {
     max-height: 95vh;
     /* padding: 1rem; */
 }
-.ae-header{
+
+.ae-header {
     padding: 20px;
     background-image: linear-gradient(to left, #00000041, #c4213ce0), url('./media/enroll_bg.jpg');
     height: 40vh;
@@ -310,8 +312,50 @@ main {
     background-position: center;
     background-size: cover;
 }
-.ae-header .course-details{
+
+.ae-header .course-details {
     margin-top: 1rem;
+}
+
+.ae-body {
+    padding: 1rem;
+}
+
+.enroll-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.enroll-form .form-control {
+    margin: .5rem 0;
+    width: 48%;
+}
+
+.form-control label {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 10px;
+    color: #444;
+}
+.coupon-form{
+    padding-top: 1rem;
+}
+.coupon-form .form-control {
+    margin: .5rem 0;
+    width: 100%;
+    text-align: end;
+}
+.coupon-form button{
+    margin: .5rem 0;
+    padding: .5rem 3rem;
+    cursor: pointer;
 }
 footer {
     color: #fff;
@@ -320,7 +364,7 @@ footer {
     text-align: center;
     font-size: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(to left, #95172c,#c4213c );
+    background-image: linear-gradient(to left, #95172c, #c4213c);
 }
 
 footer p {
