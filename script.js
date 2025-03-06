@@ -125,7 +125,7 @@ function createCourseUI(course) {
                         <div>
                             <h2>🎯 ${course.course}</h2>
                             <hr>
-                            <p> Learn the fundamentals of HTML and create your first webpage.</p>
+                            <p> ${course.courseDescription} </p>
                         </div>
 
                         <div>
@@ -166,7 +166,7 @@ function createCourseUI(course) {
 
                         <div class="instructor">
 <div class="bio">
-                                <img src="./media/${course.instructor.gender == "Male" ? "male":"female"}.jpg" alt="">
+                                <img src="./media/${course.instructor.gender == "Male" ? "male" : "female"}.jpg" alt="">
                                 <p>"Learning is not the product of teaching. <br> Learning is the product of the
                                     activity of
                                     learners." <br> - John Holt</p>
@@ -199,35 +199,124 @@ function createCourseUI(course) {
 // Function To Handle Enroll Button
 // ---------------------------------------------- 
 
-function enableEnrollNow(courses){
+function enableEnrollNow(courses) {
     const enrollNowBtns = document.querySelectorAll(".enroll-now");
     const enrollModal = document.querySelector("#enrollModal");
-const closeModalBtn = document.querySelector("#closeEnrollModal");
+    const closeModalBtn = document.querySelector("#closeEnrollModal");
+    const activeEnroll = document.querySelector("#activeEnroll");
 
-
-
-    
-    enrollNowBtns.forEach((btn, i)=>{
-        btn.addEventListener("click", function(){
+    enrollNowBtns.forEach((btn, i) => {
+        btn.addEventListener("click", function () {
             enrollModal.style.display = "flex";
-            console.log(courses[i]);
+            let ui = createEnrollUI(courses[i]);
+            activeEnroll.innerHTML = ui;
+            // console.log(courses[i]);
         })
     })
-    
 
-closeModalBtn.addEventListener("click", function(){
-    enrollModal.style.display = "none";
-})
 
-window.addEventListener("click", function(e){
-    if(e.target === enrollModal){
+    closeModalBtn.addEventListener("click", function () {
         enrollModal.style.display = "none";
-    }
-})
+    })
+
+    window.addEventListener("click", function (e) {
+        if (e.target === enrollModal) {
+            enrollModal.style.display = "none";
+        }
+    })
 
 }
 
+// ---------------------------------------------- 
+// Function To Create Enroll UI
+// ---------------------------------------------- 
+function createEnrollUI(course) {
+    let ui = `
+      <div class="ae-header">
+                        <!-- Course Details -->
+                        <h2>🎯 Course Details</h2>
+                        <hr>
+                        <div class="course-details">
+                            <p><strong>Course : </strong><span id="courseName">${course.course}</span></p>
+                            <p><strong>Instructor : </strong><span id="instructorName">${course.instructor.name}</span></p>
+                            <p><strong>Price : </strong><span id="coursePrice">${course.coursePrice} </span></p>
+                            <p><strong>Duration : </strong><span id="courseLectures">${course.courseDuration.hours}</span></p>
+                            <p><strong>Lectures : </strong><span id="courseLectures">${course.courseDuration.lectures}</span></p>
+                            <p><strong>Students : </strong><span id="courseStudents">${course.rating.counts}</span></p>
+                        </div>
+                    </div>
 
+
+                    <div class="ae-body">
+                        <!-- Student Details -->
+                        <div class="student-details">
+                            <h3>Student Details</h3>
+                            <hr>
+                            <div id="enrollForm" class="enroll-form">
+                                <div class="form-control">
+                                    <label for="name"><i class="fa-solid fa-user-tie"></i> Name</label>
+                                    <input type="text" id="name" placeholder="Enter Your Name" required
+                                        autocomplete="off">
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="phone"><i class="fa-solid fa-phone"></i> Phone</label>
+                                    <input type="tel" id="phone" placeholder="Enter Your Phone" required
+                                        autocomplete="off">
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="email"><i class="fa-solid fa-at"></i> Email</label>
+                                    <input type="email" id="email" placeholder="Enter Your Email" required
+                                        autocomplete="off">
+                                </div>
+                                <div class="form-control">
+                                    <label for="password"><i class="fa-solid fa-lock"></i> Password</label>
+                                    <input type="password" id="password" placeholder="Create Login Password" required
+                                        autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Apply Coupon Code  -->
+                        <div class="coupon-form">
+                            <h3>Apply Coupon Code </h3>
+                            <div class="form-control">
+                                <input type="text" id="coupon" placeholder="Enter Coupon Code">
+                                <button id="applyCoupon" class="btn">Apply</button>
+                            </div>
+                        </div>
+
+                        <!-- Payment Details -->
+                        <div id="paymentDetails" class="payment-details">
+                            <h3>Payment Details</h3>
+                            <hr>
+                            <div class="payment-details">
+                                <p><strong>Amount : </strong><span id="amount">${course.coursePrice} Rs. /-</span></p>
+                                <p><strong>Discount : </strong><span id="discount">0 Rs. /-</span></p>
+                                <p><strong>Total : </strong><span id="total">${course.coursePrice} Rs. /-</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Payment Gateway -->
+                        <div id="paymentGateway">
+                            <h3>Finish Payment</h3>
+                            <hr>
+                            <div class="amount"><span class="lg-txt"> ${course.coursePrice}</span> Rs. /- </div>
+
+                            <p class="final-line">Education opens doors, but action makes the difference. Take the leap,
+                                invest in yourself, and make your goals a reality! 🎯🙌</p>
+
+                            <div class="payment-gateway">
+                                <button id="submit" class="btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+    `;
+
+    return ui;
+}
 // ---------------------------------------------- 
 // Function To Search Courses 
 // ---------------------------------------------- 
