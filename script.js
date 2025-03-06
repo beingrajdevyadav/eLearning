@@ -201,8 +201,30 @@ function createCourseUI(course) {
 
 function enableEnrollNow(courses){
     const enrollNowBtns = document.querySelectorAll(".enroll-now");
-    console.log(enrollNowBtns);
-    console.log(courses);
+    const enrollModal = document.querySelector("#enrollModal");
+const closeModalBtn = document.querySelector("#closeEnrollModal");
+
+
+
+    
+    enrollNowBtns.forEach((btn, i)=>{
+        btn.addEventListener("click", function(){
+            enrollModal.style.display = "flex";
+            console.log(courses[i]);
+        })
+    })
+    
+
+closeModalBtn.addEventListener("click", function(){
+    enrollModal.style.display = "none";
+})
+
+window.addEventListener("click", function(e){
+    if(e.target === enrollModal){
+        enrollModal.style.display = "none";
+    }
+})
+
 }
 
 
