@@ -69,33 +69,44 @@
 
                     <div class="ae-body">
                         <!-- Student Details -->
-                        <h3>Student Details</h3>
-                        <hr>
-                        <div id="enrollForm" class="enroll-form">
-                           
 
-                            <div class="form-control">
-                                <label for="name"><i class="fa-solid fa-user-tie"></i> Name</label>
-                                <input type="text" id="name" placeholder="Enter Your Name" required autocomplete="off">
+                        <div class="student-details">
+
+                            <h3>Student Details</h3>
+                            <hr>
+                            <div id="enrollForm" class="enroll-form">
+
+
+                                <div class="form-control">
+                                    <label for="name"><i class="fa-solid fa-user-tie"></i> Name</label>
+                                    <input type="text" id="name" placeholder="Enter Your Name" required
+                                        autocomplete="off">
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="phone"><i class="fa-solid fa-phone"></i> Phone</label>
+                                    <input type="tel" id="phone" placeholder="Enter Your Phone" required
+                                        autocomplete="off">
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="email"><i class="fa-solid fa-at"></i> Email</label>
+                                    <input type="email" id="email" placeholder="Enter Your Email" required
+                                        autocomplete="off">
+                                </div>
+                                <div class="form-control">
+                                    <label for="password"><i class="fa-solid fa-lock"></i> Password</label>
+                                    <input type="password" id="password" placeholder="Create Login Password" required
+                                        autocomplete="off">
+                                </div>
+
                             </div>
 
-                            <div class="form-control">
-                                <label for="phone"><i class="fa-solid fa-phone"></i> Phone</label>
-                                <input type="tel" id="phone" placeholder="Enter Your Phone" required autocomplete="off">
+                            <div class="student-details-control">
+                                <button>Next</button>
                             </div>
-
-                            <div class="form-control">
-                                <label for="email"><i class="fa-solid fa-at"></i>  Email</label>
-                                <input type="email" id="email" placeholder="Enter Your Email" required autocomplete="off">
-                            </div>
-                            <div class="form-control">
-                                <label for="password"><i class="fa-solid fa-lock"></i> Password</label>
-                                <input type="password" id="password" placeholder="Create Login Password" required autocomplete="off">
-                            </div>
-                            
                         </div>
 
-                        <hr>
 
                         <!-- Apply Coupon Code  -->
                         <div class="coupon-form">
@@ -107,8 +118,9 @@
                         </div>
 
                         <!-- Payment Details -->
-                        <div id="paymentDetails">
+                        <div id="paymentDetails" class="payment-details">
                             <h3>Payment Details</h3>
+                            <hr>
                             <div class="payment-details">
                                 <p><strong>Amount: </strong><span id="amount"></span></p>
                                 <p><strong>Discount: </strong><span id="discount"></span></p>
@@ -119,9 +131,13 @@
                         <!-- Payment Gateway -->
                         <div id="paymentGateway">
                             <h3>Finish Payment</h3>
-                            <h1>5549</h1>
+                            <hr>
+                            <div class="amount"><span class="lg-txt"> 5549</span> Rs. /- </div>
+
+                            <p class="final-line">Education opens doors, but action makes the difference. Take the leap, invest in yourself, and make your goals a reality! 🎯🙌</p>
+
                             <div class="payment-gateway">
-                                <button id="payNow" class="btn">Pay Now</button>
+                                <button id="submit" class="btn">Submit</button>
                             </div>
                         </div>
                     </div>

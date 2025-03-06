@@ -326,7 +326,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1rem 0 0;
 }
 
 .enroll-form .form-control {
@@ -344,19 +344,86 @@ main {
     padding: 10px;
     color: #444;
 }
-.coupon-form{
+.student-details-control{
+    text-align: end;
+    /* padding: 1rem 0; */
+}
+.student-details-control button{
+    margin: .5rem 0;
+    padding: .6rem 3rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #c4213c;
+    transition: all .5s ease;
+    border-radius: 5px;
+    color: #fff;
+}
+.student-details-control button:hover{
+    background-color: #95172c;
+}
+/* Coupon Form  */
+.coupon-form {
     padding-top: 1rem;
 }
+
 .coupon-form .form-control {
     margin: .5rem 0;
     width: 100%;
     text-align: end;
 }
-.coupon-form button{
+
+.coupon-form button {
     margin: .5rem 0;
-    padding: .5rem 3rem;
+    padding: .6rem 3rem;
     cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #c4213c;
+    transition: all .5s ease;
+    border-radius: 5px;
+    color: #fff;
 }
+
+.coupon-form button:hover {
+    background-color: #95172c;
+}
+
+/* Payment Details  */
+.payment-details {
+    padding: 1rem 0;
+}
+
+.amount{
+    text-align: center;
+    padding: 1rem 0;
+}
+.amount .lg-txt{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.final-line{
+    font-size: 14px;
+}
+.payment-gateway{
+    text-align: end;
+    
+}
+.payment-gateway button{
+    margin: .5rem 0;
+    padding: .6rem 3rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #c4213c;
+    transition: all .5s ease;
+    border-radius: 5px;
+    color: #fff;
+}
+.payment-gateway button:hover{
+    background-color: #95172c;
+}
+
 footer {
     color: #fff;
     padding: 20px;
