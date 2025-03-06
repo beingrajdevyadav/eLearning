@@ -344,33 +344,20 @@ main {
     padding: 10px;
     color: #444;
 }
-.student-details-control{
-    text-align: end;
-    /* padding: 1rem 0; */
-}
-.student-details-control button{
-    margin: .5rem 0;
-    padding: .6rem 3rem;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background-color: #c4213c;
-    transition: all .5s ease;
-    border-radius: 5px;
-    color: #fff;
-}
-.student-details-control button:hover{
-    background-color: #95172c;
-}
+
 /* Coupon Form  */
 .coupon-form {
     padding-top: 1rem;
 }
 
 .coupon-form .form-control {
-    margin: .5rem 0;
+    padding: .5rem 0;
     width: 100%;
     text-align: end;
+
+}
+.coupon-form input{
+    margin-top: .5rem;
 }
 
 .coupon-form button {
@@ -477,5 +464,14 @@ footer p {
         min-height: 50vh;
         height: auto;
         padding-top: 1rem;
+    }
+
+    .enroll-content{
+        width: 95%;
+    }
+
+    .enroll-form .form-control {
+        margin: .5rem 0;
+        width: 100%;
     }
 }
