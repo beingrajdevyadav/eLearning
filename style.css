@@ -316,6 +316,7 @@ main {
 
 .ae-header .course-details {
     margin-top: 1rem;
+    padding: 2rem;
 }
 
 .ae-body {
@@ -359,6 +360,7 @@ main {
 }
 .coupon-form input{
     margin-top: .5rem;
+    text-transform: uppercase;
 }
 
 .coupon-form button {

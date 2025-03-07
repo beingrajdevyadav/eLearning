@@ -210,6 +210,7 @@ function enableEnrollNow(courses) {
             enrollModal.style.display = "flex";
             let ui = createEnrollUI(courses[i]);
             activeEnroll.innerHTML = ui;
+            enableCouponFunctionality(courses[i].coursePrice);
             // console.log(courses[i]);
         })
     })
@@ -239,9 +240,9 @@ function createEnrollUI(course) {
                         <div class="course-details">
                             <p><strong>Course : </strong><span id="courseName">${course.course}</span></p>
                             <p><strong>Instructor : </strong><span id="instructorName">${course.instructor.name}</span></p>
-                            <p><strong>Price : </strong><span id="coursePrice">${course.coursePrice} </span></p>
-                            <p><strong>Duration : </strong><span id="courseLectures">${course.courseDuration.hours}</span></p>
-                            <p><strong>Lectures : </strong><span id="courseLectures">${course.courseDuration.lectures}</span></p>
+                            <p><strong>Price : </strong><span id="coursePrice">${course.coursePrice} Rs. /- </span></p>
+                            <p><strong>Duration : </strong><span id="courseLectures">${course.courseDuration.hours} hours</span></p>
+                            <p><strong>Lectures : </strong><span id="courseLectures">${course.courseDuration.lectures} lectures</span></p>
                             <p><strong>Students : </strong><span id="courseStudents">${course.rating.counts}</span></p>
                         </div>
                     </div>
@@ -283,7 +284,7 @@ function createEnrollUI(course) {
                         <div class="coupon-form">
                             <h3>Apply Coupon Code </h3>
                             <div class="form-control">
-                                <input type="text" id="coupon" placeholder="Enter Coupon Code">
+                                <input type="text" id="coupon" class="coupon" autocomplete="off" placeholder="Enter Coupon Code">
                                 <button id="applyCoupon" class="btn">Apply</button>
                             </div>
                         </div>
@@ -294,8 +295,8 @@ function createEnrollUI(course) {
                             <hr>
                             <div class="payment-details">
                                 <p><strong>Amount : </strong><span id="amount">${course.coursePrice} Rs. /-</span></p>
-                                <p><strong>Discount : </strong><span id="discount">0 Rs. /-</span></p>
-                                <p><strong>Total : </strong><span id="total">${course.coursePrice} Rs. /-</span></p>
+                                <p><strong>Discount : </strong><span id="discount">0 </span> Rs. /-</p>
+                                <p><strong>Total : </strong><span id="total">${course.coursePrice} </span> Rs. /-</p>
                             </div>
                         </div>
 
@@ -303,7 +304,7 @@ function createEnrollUI(course) {
                         <div id="paymentGateway">
                             <h3>Finish Payment</h3>
                             <hr>
-                            <div class="amount"><span class="lg-txt"> ${course.coursePrice}</span> Rs. /- </div>
+                            <div class="amount"><span class="lg-txt" id="finalPrice"> ${course.coursePrice}</span> Rs. /- </div>
 
                             <p class="final-line">Education opens doors, but action makes the difference. Take the leap,
                                 invest in yourself, and make your goals a reality! 🎯🙌</p>
@@ -316,6 +317,42 @@ function createEnrollUI(course) {
     `;
 
     return ui;
+}
+
+// ---------------------------------------------- 
+// Function To Apply Coupon 
+// ---------------------------------------------- 
+function enableCouponFunctionality(price) {
+    const coupons = {
+        "LOVE10": 10,
+        "SAVE20": 20,
+        "DEAL30": 30,
+        "OFFER40": 40,
+        "MEGA50": 50
+    }
+    const applyBtn = document.querySelector("#applyCoupon");
+
+    applyBtn.addEventListener("click", function () {
+        const couponCode = document.querySelector("#coupon").value.toUpperCase();
+        console.log(couponCode);
+        // console.log(coupons[couponCode])
+        if (coupons.hasOwnProperty(couponCode)) {
+            let discount = ((coupons[couponCode] / 100) * price).toFixed(2);
+            let finalPrice = (price - discount).toFixed(2);
+
+            document.getElementById("discount").innerText = discount;
+            document.getElementById("total").innerText = finalPrice;
+            document.getElementById("finalPrice").innerText = finalPrice;
+
+            this.innerText = "Applied 🎉";
+document.getElementById("coupon").readOnly = true;
+           
+            
+            // console.log(price, discount, finalPrice);
+        }else{
+            document.getElementById("coupon").value = "Invalid Coupon!"
+        }
+    })
 }
 // ---------------------------------------------- 
 // Function To Search Courses 
