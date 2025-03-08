@@ -95,11 +95,20 @@ function paginateCourses(courses) {
     const PrevPageBtn = document.getElementById("prev-page");
     const NextPageBtn = document.getElementById("next-page");
 
-    
-    const start = (currentPage - 1) * coursesPerPage;
-    const end = start + coursesPerPage;
 
+   
+
+
+    function updateUI(){
+        const start = (currentPage - 1) * coursesPerPage;
+        const end = start + coursesPerPage;
     const paginatedCourses = courses.slice(start, end);
+
+        displayCourses(paginatedCourses);
+        console.log(paginatedCourses);
+    }
+
+
 
     document.getElementById("page-info").innerText = `Page ${currentPage} of ${Math.ceil(courses.length / coursesPerPage)}`;
 
@@ -107,14 +116,26 @@ function paginateCourses(courses) {
     PrevPageBtn.addEventListener("click", function () {
         if (currentPage > 1) {
             currentPage--;
+
+            document.getElementById("page-info").innerText = `Page ${currentPage} of ${Math.ceil(courses.length / coursesPerPage)}`;
+
+            updateUI();
         }
     });
 
     NextPageBtn.addEventListener("click", function () {
         if (currentPage < Math.ceil(courses.length / coursesPerPage)) {
             currentPage++;
+
+            document.getElementById("page-info").innerText = `Page ${currentPage} of ${Math.ceil(courses.length / coursesPerPage)}`;
+
+            updateUI();
         }
     });
+
+
+    // to run once
+    updateUI();
 }
 
 
@@ -482,7 +503,9 @@ window.addEventListener("load", function () {
                 TotalCourses.push(course);
             });
 
+            paginateCourses(printingData);
+
             // console.log(printingData);
-            displayCourses(printingData.slice(0, 9));
+            // displayCourses(printingData.slice(0, 9));
         })
 })
