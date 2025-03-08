@@ -4,7 +4,8 @@ console.log("👨‍💻 Jai Shree Shyam Baba ❤🙏");
 // Global Variables
 // ---------------------------------------------- 
 const TotalCourses = [];
-
+const coursesPerPage = 6;
+let currentPage = 1;
 
 // ---------------------------------------------- 
 // Function To Fetch Data From data.json file
@@ -84,6 +85,39 @@ function displayCourses(courses) {
     enableViewCourse(courses);
     enableEnrollNow(courses);
 }
+
+// ---------------------------------------------- 
+// Function To Paginate Courses
+// ---------------------------------------------- 
+
+
+function paginateCourses(courses) {
+    const PrevPageBtn = document.getElementById("prev-page");
+    const NextPageBtn = document.getElementById("next-page");
+
+    
+    const start = (currentPage - 1) * coursesPerPage;
+    const end = start + coursesPerPage;
+
+    const paginatedCourses = courses.slice(start, end);
+
+    document.getElementById("page-info").innerText = `Page ${currentPage} of ${Math.ceil(courses.length / coursesPerPage)}`;
+
+
+    PrevPageBtn.addEventListener("click", function () {
+        if (currentPage > 1) {
+            currentPage--;
+        }
+    });
+
+    NextPageBtn.addEventListener("click", function () {
+        if (currentPage < Math.ceil(courses.length / coursesPerPage)) {
+            currentPage++;
+        }
+    });
+}
+
+
 
 // ---------------------------------------------- 
 // Function To Handle View Course Button
@@ -343,11 +377,11 @@ function enableCouponFunctionality(price) {
             document.getElementById("finalPrice").innerText = finalPrice;
 
             this.innerText = "Applied 🎉";
-document.getElementById("coupon").readOnly = true;
-           
-            
+            document.getElementById("coupon").readOnly = true;
+
+
             // console.log(price, discount, finalPrice);
-        }else{
+        } else {
             document.getElementById("coupon").value = "Invalid Coupon!"
         }
     })
