@@ -137,9 +137,7 @@ function createCourseUI(course) {
                         </div>
 
 
-                        <div>
-                            <button>Enroll Now</button>
-                        </div>
+                        
                     </div>
                     <div class="ac-body">
 

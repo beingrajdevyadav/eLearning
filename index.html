@@ -34,19 +34,28 @@
 
 
     <main>
+        <!-- course container div  -->
         <div id="courses" class="courses"></div>
+
+        <!-- pagination  -->
+         <div class="pagination">
+            <button id="prev-page">Previous</button>
+            <div class="page-info">1</div>
+            <button id="next-page">Next</button>
+         </div>
+
+        <!-- view course  -->
         <div class="modal" id="courseModal">
             <div class="modal-content" id="modalContent">
                 <span class="close" id="closeModal">&times;</span>
-
                 <div id="activeCourse"></div>
             </div>
         </div>
 
+        <!-- enroll course  -->
         <div class="enroll-modal" id="enrollModal">
             <div class="enroll-content" id="enrollContent">
                 <span class="close" id="closeEnrollModal">&times;</span>
-
                 <div id="activeEnroll"></div>
             </div>
         </div>
