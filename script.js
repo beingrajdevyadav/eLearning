@@ -91,18 +91,15 @@ function displayCourses(courses) {
 // ---------------------------------------------- 
 
 
-function paginateCourses(courses) {
+function paginateCourses(pcl) {
     const PrevPageBtn = document.getElementById("prev-page");
     const NextPageBtn = document.getElementById("next-page");
-
-
-   
 
 
     function updateUI(){
         const start = (currentPage - 1) * coursesPerPage;
         const end = start + coursesPerPage;
-    const paginatedCourses = courses.slice(start, end);
+    const paginatedCourses = pcl.slice(start, end);
 
         displayCourses(paginatedCourses);
         console.log(paginatedCourses);
@@ -110,24 +107,24 @@ function paginateCourses(courses) {
 
 
 
-    document.getElementById("page-info").innerText = `Page ${currentPage} of ${Math.ceil(courses.length / coursesPerPage)}`;
+    document.getElementById("page-info").innerText = `Page ${currentPage} of ${Math.ceil(pcl.length / coursesPerPage)}`;
 
 
     PrevPageBtn.addEventListener("click", function () {
         if (currentPage > 1) {
             currentPage--;
 
-            document.getElementById("page-info").innerText = `Page ${currentPage} of ${Math.ceil(courses.length / coursesPerPage)}`;
+            document.getElementById("page-info").innerText = `Page ${currentPage} of ${Math.ceil(pcl.length / coursesPerPage)}`;
 
             updateUI();
         }
     });
 
     NextPageBtn.addEventListener("click", function () {
-        if (currentPage < Math.ceil(courses.length / coursesPerPage)) {
+        if (currentPage < Math.ceil(pcl.length / coursesPerPage)) {
             currentPage++;
 
-            document.getElementById("page-info").innerText = `Page ${currentPage} of ${Math.ceil(courses.length / coursesPerPage)}`;
+            document.getElementById("page-info").innerText = `Page ${currentPage} of ${Math.ceil(pcl.length / coursesPerPage)}`;
 
             updateUI();
         }
@@ -433,7 +430,8 @@ function searchCourses() {
     }
 
     // console.log(searchResult);
-    displayCourses(searchResult);
+    // displayCourses(searchResult);
+    paginateCourses(searchResult);
     document.querySelector("#searchInput").value = '';
 }
 
