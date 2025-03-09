@@ -418,9 +418,23 @@ function enableCouponFunctionality(price) {
 // ---------------------------------------------- 
 function enableFinalFunctionality(course) {
     const final = document.getElementById("final");
+    const studentName = document.getElementById("studentName");
+    const name = document.getElementById("name").value;
+    const finalCourseName = document.getElementById("f-course-name");
+    const Instructor = document.getElementById("f-instructor");
+    const closeFinalBtn = document.getElementById("closeFinalBtn");
 
+
+    studentName.innerText = name;
+    finalCourseName.innerText = course.course;
+    Instructor.innerText = course.instructor.name;
     final.style.display = "flex";
-    console.log("btn clicked!");
+
+    // console.log("btn clicked!");
+
+    closeFinalBtn.addEventListener("click", function(){
+        final.style.display = "none";
+    })
 
 }
 // ---------------------------------------------- 
