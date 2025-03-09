@@ -96,13 +96,13 @@ function paginateCourses(pcl) {
     const NextPageBtn = document.getElementById("next-page");
 
 
-    function updateUI(){
+    function updateUI() {
         const start = (currentPage - 1) * coursesPerPage;
         const end = start + coursesPerPage;
-    const paginatedCourses = pcl.slice(start, end);
+        const paginatedCourses = pcl.slice(start, end);
 
         displayCourses(paginatedCourses);
-        console.log(paginatedCourses);
+        // console.log(paginatedCourses);
     }
 
 
@@ -155,6 +155,7 @@ function enableViewCourse(courses) {
             activeCourse.innerHTML = ui;
         });
     });
+
 
     closeBtn.addEventListener("click", function () {
         modal.style.display = "none"; // to hide course modal
@@ -255,13 +256,21 @@ function enableEnrollNow(courses) {
     const closeModalBtn = document.querySelector("#closeEnrollModal");
     const activeEnroll = document.querySelector("#activeEnroll");
 
+
     enrollNowBtns.forEach((btn, i) => {
         btn.addEventListener("click", function () {
             enrollModal.style.display = "flex";
             let ui = createEnrollUI(courses[i]);
             activeEnroll.innerHTML = ui;
             enableCouponFunctionality(courses[i].coursePrice);
-            // console.log(courses[i]);
+
+
+            const submitBtn = document.getElementById("submit");
+            submitBtn.addEventListener("click", function () {
+                // console.log(courses[i]);
+                enableFinalFunctionality(courses[i]);
+                enrollModal.style.display = "none";
+            })
         })
     })
 
@@ -403,6 +412,16 @@ function enableCouponFunctionality(price) {
             document.getElementById("coupon").value = "Invalid Coupon!"
         }
     })
+}
+// ---------------------------------------------- 
+// Function To Handle Submit Button
+// ---------------------------------------------- 
+function enableFinalFunctionality(course) {
+    const final = document.getElementById("final");
+
+    final.style.display = "flex";
+    console.log("btn clicked!");
+
 }
 // ---------------------------------------------- 
 // Function To Search Courses 

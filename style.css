@@ -426,7 +426,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    /* display: none; */
+    display: none;
 }
 .final-content{
     background-color: #fff;
@@ -453,8 +453,12 @@ main {
 .f-body{
     padding: 2rem 1rem 1rem;
 }
+.f-body h2{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
 .f-body p{
-    margin: .5rem 0;
+    /* margin: .5rem 0; */
     font-size: 14px;
 }
 .f-body p:last-child{
@@ -462,6 +466,7 @@ main {
     font-weight: 700;
     text-align: end;
     font-style: italic;
+    margin-top: 1rem;
 }
 
 .f-body p span{
@@ -548,8 +553,20 @@ footer p {
         width: 95%;
     }
 
+    .ae-header{
+        height: 50vh;
+        padding: 20px 10px;
+    }
+
     .enroll-form .form-control {
         margin: .5rem 0;
         width: 100%;
+    }
+
+    .final-content{
+        width: 95%;
+    }
+    .f-body h2{
+        font-size: 1.5rem;
     }
 }
