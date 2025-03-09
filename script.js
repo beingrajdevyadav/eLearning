@@ -115,6 +115,7 @@ function paginateCourses(pcl) {
             currentPage--;
 
             document.getElementById("page-info").innerText = `Page ${currentPage} of ${Math.ceil(pcl.length / coursesPerPage)}`;
+
             let message = `📑 Page ${currentPage}`;
             showToast(message, "success");
             updateUI();
@@ -277,12 +278,17 @@ function enableEnrollNow(courses) {
             activeEnroll.innerHTML = ui;
             enableCouponFunctionality(courses[i].coursePrice);
 
+            let message = `🤪 Enroll Form !`;
+            showToast(message, "success");
 
             const submitBtn = document.getElementById("submit");
             submitBtn.addEventListener("click", function () {
                 // console.log(courses[i]);
                 enableFinalFunctionality(courses[i]);
                 enrollModal.style.display = "none";
+
+                let message = `❤ Enroll Form Submitted !`;
+            showToast(message, "success");
             })
         })
     })
@@ -290,11 +296,17 @@ function enableEnrollNow(courses) {
 
     closeModalBtn.addEventListener("click", function () {
         enrollModal.style.display = "none";
+
+        let message = `🤪 Enroll Form Hidden !`;
+            showToast(message, "success");
     })
 
     window.addEventListener("click", function (e) {
         if (e.target === enrollModal) {
             enrollModal.style.display = "none";
+
+            let message = `🥱 Enroll Form Hidded !`;
+            showToast(message, "success");
         }
     })
 
@@ -419,10 +431,15 @@ function enableCouponFunctionality(price) {
             this.innerText = "Applied 🎉";
             document.getElementById("coupon").readOnly = true;
 
-
+            
+            let message = `🎉 ${coupons[couponCode]} % Off `;
+            showToast(message, "success");
             // console.log(price, discount, finalPrice);
         } else {
-            document.getElementById("coupon").value = "Invalid Coupon!"
+            document.getElementById("coupon").value = " ";
+
+            let message = `🙄 ${couponCode} WRONG CODE! `;
+            showToast(message, "success");
         }
     })
 }
@@ -447,6 +464,9 @@ function enableFinalFunctionality(course) {
 
     closeFinalBtn.addEventListener("click", function () {
         final.style.display = "none";
+
+        let message = ` 😇 Thank You ! `;
+            showToast(message, "success");
     })
 
 }
