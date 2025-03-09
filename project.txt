@@ -1,0 +1,26 @@
+Hi champion!
+thank you for cloning this project. 😵
+
+Here, I'm gonna give an overview of this awesome project. 📑
+
+# About Functions
+
+1. fetchData() - to fetch data from APIs or JSON fields
+2. remixData() - to remix response array to avoid same user interface
+3. displayCourses() - to display courses 
+4. paginateCourses() - to paginate courses 
+5. enableViewCourse() - to handle view course button click
+6. createCourseUI() - to create course ui design for enableViewCourse() function
+7. enableEnrollNow() - to handle enroll now button click
+8. createEnrollUI() - to create ui design for enableEnrollNow() function
+9. enableCouponFunctionality() - to handle couponCode feature 
+10. enableFinalFunctionality() - to generate final response after enroll form submittion
+11. searchCourses() - to search specific courses form courses
+12. handleRatings() - to create stars and user counts
+13. showToast() - to show toast notifications
+
+and with name you can understand complete functionality of this app. 
+
+thank you so much..
+jai shree krishna. 💙
+-- Rajdev Yadav
