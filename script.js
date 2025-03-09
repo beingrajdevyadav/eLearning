@@ -306,7 +306,7 @@ function enableEnrollNow(courses) {
                         name.style.outlineColor = "red";
                         name.placeholder = "Name must be string!";
                         name.focus();
-                        let message = `🙄 Name must be string !`;
+                        let message = `🥱 Name must be string !`;
                         showToast(message, "success");
                         return;
                     }
@@ -317,7 +317,7 @@ function enableEnrollNow(courses) {
                         name.style.outlineColor = "red";
                         name.placeholder = "Name must be atleast 3 characters!";
                         name.focus();
-                        let message = `🙄 Name must be atleast 3 characters !`;
+                        let message = `😴 Name must be atleast 3 characters !`;
                         showToast(message, "success");
                         return;
                     }
@@ -328,7 +328,7 @@ function enableEnrollNow(courses) {
                         name.style.outlineColor = "red";
                         name.placeholder = "Name must be less than 20 characters!";
                         name.focus();
-                        let message = `🙄 Name must be less than 20 characters !`;
+                        let message = `🤪 Name must be less than 20 characters !`;
                         showToast(message, "success");
                         return;
                     }
@@ -339,7 +339,7 @@ function enableEnrollNow(courses) {
                         name.style.outlineColor = "red";
                         name.placeholder = "Name must be alphabets!";
                         name.focus();
-                        let message = `🙄 Name must be alphabets !`;
+                        let message = `😵 Name must be alphabets !`;
                         showToast(message, "success");
                         return;
                     }
@@ -352,7 +352,7 @@ function enableEnrollNow(courses) {
                     phone.style.outlineColor = "red";
                     phone.placeholder = "Phone is required!";
                     phone.focus();
-                    let message = `🙄 Phone is required !`;
+                    let message = `😜 Phone is required !`;
                     showToast(message, "success");
                     return;
                 } else {
@@ -362,7 +362,7 @@ function enableEnrollNow(courses) {
                         phone.style.outlineColor = "red";
                         phone.placeholder = "Phone must be number!";
                         phone.focus();
-                        let message = `🙄 Phone must be number !`;
+                        let message = `😛 Phone must be number !`;
                         showToast(message, "success");
                         return;
                     }
@@ -373,17 +373,73 @@ function enableEnrollNow(courses) {
                         phone.style.outlineColor = "red";
                         phone.placeholder = "Phone must be 10 digits!";
                         phone.focus();
-                        let message = `🙄 Phone must be 10 digits !`;
+                        let message = `🤐 Phone must be 10 digits !`;
                         showToast(message, "success");
                         return;
                     }
                 }
 
+                // Email Validation Condition
+                if (email.value === "") {
+                    email.style.border = "1px solid red";
+                    email.style.outlineColor = "red";
+                    email.placeholder = "Email is required!";
+                    email.focus();
+                    let message = `🥱 Email is required !`;
+                    showToast(message, "success");
+                    return;
+                } else {
+                    // check if email is valid
+                    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+                        email.style.border = "1px solid red";
+                        email.style.outlineColor = "red";
+                        email.placeholder = "Email is invalid!";
+                        email.focus();
+                        let message = `😴 Email is invalid !`;
+                        showToast(message, "success");
+                        return;
+                    }
+                }
+
+                // Password Validation Condition
+                if (password.value === "") {
+                    password.style.border = "1px solid red";
+                    password.style.outlineColor = "red";
+                    password.placeholder = "Password is required!";
+                    password.focus();
+                    let message = `😵 Password is required !`;
+                    showToast(message, "success");
+                    return;
+                } else {
+                    // check if password is greater than 6 characters
+                    if (password.value.length < 6) {
+                        password.style.border = "1px solid red";
+                        password.style.outlineColor = "red";
+                        password.placeholder = "Password must be atleast 6 characters!";
+                        password.focus();
+                        let message = `🤪 Password must be atleast 6 characters !`;
+                        showToast(message, "success");
+                        return;
+                    }
+
+                    // check if password is less than 20 characters
+                    if (password.value.length > 20) {
+                        password.style.border = "1px solid red";
+                        password.style.outlineColor = "red";
+                        password.placeholder = "Password must be less than 20 characters!";
+                        password.focus();
+                        let message = `😜 Password must be less than 20 characters !`;
+                        showToast(message, "success");
+                        return;
+                    }
+                }
+
+
                 // console.log(courses[i]);
                 enableFinalFunctionality(courses[i]);
                 enrollModal.style.display = "none";
 
-                let message = `❤ Enroll Form Submitted !`;
+                let message = `🥰 Enrolled Successfully !`;
                 showToast(message, "success");
             })
         })
