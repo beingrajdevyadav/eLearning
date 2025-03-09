@@ -517,8 +517,22 @@ function handleRatings(rating) {
     return container;
 }
 
+// ---------------------------------------------- 
+// Function To show toastify notifications
+// ---------------------------------------------- 
 
-
+function showToast(message, type) {
+   Toastify({
+        text: message,
+        duration: 3000,
+        newWindow: true,
+        close: true,
+        gravity: "top",
+        position: 'right',
+        backgroundColor: type === 'success' ? "linear-gradient(to right, #00b09b, #96c93d)" : "linear-gradient(to right, #ff5f6d, #ffc371)",
+        stopOnFocus: true,
+    }).showToast();
+}
 
 // ---------------------------------------------- 
 // Function To Handle On window load
