@@ -169,7 +169,7 @@ function enableViewCourse(courses) {
         modal.style.display = "none"; // to hide course modal
 
         let message = `😜 Course Hidden !`;
-            showToast(message, "success");
+        showToast(message, "success");
     });
 
     window.addEventListener("click", function (e) {
@@ -288,7 +288,7 @@ function enableEnrollNow(courses) {
                 enrollModal.style.display = "none";
 
                 let message = `❤ Enroll Form Submitted !`;
-            showToast(message, "success");
+                showToast(message, "success");
             })
         })
     })
@@ -298,7 +298,7 @@ function enableEnrollNow(courses) {
         enrollModal.style.display = "none";
 
         let message = `🤪 Enroll Form Hidden !`;
-            showToast(message, "success");
+        showToast(message, "success");
     })
 
     window.addEventListener("click", function (e) {
@@ -431,7 +431,7 @@ function enableCouponFunctionality(price) {
             this.innerText = "Applied 🎉";
             document.getElementById("coupon").readOnly = true;
 
-            
+
             let message = `🎉 ${coupons[couponCode]} % Off `;
             showToast(message, "success");
             // console.log(price, discount, finalPrice);
@@ -466,7 +466,7 @@ function enableFinalFunctionality(course) {
         final.style.display = "none";
 
         let message = ` 😇 Thank You ! `;
-            showToast(message, "success");
+        showToast(message, "success");
     })
 
 }
@@ -492,12 +492,18 @@ function searchCourses() {
        </div>`;
 
         document.querySelector("#searchInput").value = '';
+
+        let message = `🙄 Not Found ! `;
+        showToast(message, "success");
         return;
     }
 
     // console.log(searchResult);
     // displayCourses(searchResult);
     paginateCourses(searchResult);
+
+    let message = `😯 Great Search ! `;
+        showToast(message, "success");
     document.querySelector("#searchInput").value = '';
 }
 
