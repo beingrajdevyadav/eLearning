@@ -538,6 +538,10 @@ footer p {
 
     .search-bar {
         width: 100%;
+        flex-direction: column;
+    }
+    .search-bar input{
+        width: 100%;
     }
 
     main {
