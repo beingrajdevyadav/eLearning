@@ -115,7 +115,8 @@ function paginateCourses(pcl) {
             currentPage--;
 
             document.getElementById("page-info").innerText = `Page ${currentPage} of ${Math.ceil(pcl.length / coursesPerPage)}`;
-
+            let message = `📑 Page ${currentPage}`;
+            showToast(message, "success");
             updateUI();
         }
     });
@@ -126,6 +127,9 @@ function paginateCourses(pcl) {
 
             document.getElementById("page-info").innerText = `Page ${currentPage} of ${Math.ceil(pcl.length / coursesPerPage)}`;
 
+
+            let message = `📑 Page ${currentPage}`;
+            showToast(message, "success");
             updateUI();
         }
     });
@@ -526,13 +530,21 @@ function showToast(message, type) {
         text: message,
         duration: 3000,
         newWindow: true,
-        close: true,
+        close: false,
         gravity: "top",
         position: 'right',
-        backgroundColor: type === 'success' ? "linear-gradient(to right, #00b09b, #96c93d)" : "linear-gradient(to right, #ff5f6d, #ffc371)",
+        backgroundColor: "#c4213c",
         stopOnFocus: true,
+        className: "toast-slide-right"
     }).showToast();
+
+
+    setTimeout(() => {
+        document.querySelector(".toastify").style.minWidth = "250px";
+            
+        }, 100);
 }
+
 
 // ---------------------------------------------- 
 // Function To Handle On window load

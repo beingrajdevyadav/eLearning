@@ -494,6 +494,23 @@ main {
 .f-footer button:hover{
     background-color: #95172c;
 }
+
+/* animation for toast */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+    
+}
+
+.toast-slide-right{
+    animation: slideInRight .5s ease-out;
+}
+
 footer {
     color: #fff;
     padding: 20px;
