@@ -289,8 +289,64 @@ function enableEnrollNow(courses) {
                 let email = document.querySelector("#email");
                 let password = document.querySelector("#password");
 
+                // Name Validation Condition
 
-                // write form validation here
+                if (name.value === "") {
+                    name.style.border = "1px solid red";
+                    name.style.outlineColor = "red";
+                    name.placeholder = "Name is required!";
+                    name.focus();
+                    let message = `🙄 Name is required !`;
+                    showToast(message, "success");
+                    return;
+                } else {
+                    // check if name is string
+                    if (!isNaN(name.value)) {
+                        name.style.border = "1px solid red";
+                        name.style.outlineColor = "red";
+                        name.placeholder = "Name must be string!";
+                        name.focus();
+                        let message = `🙄 Name must be string !`;
+                        showToast(message, "success");
+                        return;
+                    }
+
+                    // check if name is less than 3 characters
+                    if (name.value.length < 3) {
+                        name.style.border = "1px solid red";
+                        name.style.outlineColor = "red";
+                        name.placeholder = "Name must be atleast 3 characters!";
+                        name.focus();
+                        let message = `🙄 Name must be atleast 3 characters !`;
+                        showToast(message, "success");
+                        return;
+                    }
+
+                    // check if name is greater than 20 characters
+                    if (name.value.length > 20) {
+                        name.style.border = "1px solid red";
+                        name.style.outlineColor = "red";
+                        name.placeholder = "Name must be less than 20 characters!";
+                        name.focus();
+                        let message = `🙄 Name must be less than 20 characters !`;
+                        showToast(message, "success");
+                        return;
+                    }
+
+                    // check if name has special characters
+                    if (!/^[a-zA-Z ]+$/.test(name.value)) {
+                        name.style.border = "1px solid red";
+                        name.style.outlineColor = "red";
+                        name.placeholder = "Name must be alphabets!";
+                        name.focus();
+                        let message = `🙄 Name must be alphabets !`;
+                        showToast(message, "success");
+                        return;
+                    }
+                }
+
+
+                
 
                 // console.log(courses[i]);
                 enableFinalFunctionality(courses[i]);
@@ -437,10 +493,12 @@ function enableCouponFunctionality(price) {
             document.getElementById("total").innerText = finalPrice;
             document.getElementById("finalPrice").innerText = finalPrice;
 
+            // after applying coupon code
             this.innerText = "Applied 🎉";
             document.getElementById("coupon").readOnly = true;
 
 
+            // toast message
             let message = `🎉 ${coupons[couponCode]} % Off `;
             showToast(message, "success");
             // console.log(price, discount, finalPrice);
