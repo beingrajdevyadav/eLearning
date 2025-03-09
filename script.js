@@ -157,17 +157,26 @@ function enableViewCourse(courses) {
             // console.log(courses[i]);
             let ui = createCourseUI(courses[i]);
             activeCourse.innerHTML = ui;
+
+            let message = `😵  Course Opened !`;
+            showToast(message, "success");
         });
     });
 
 
     closeBtn.addEventListener("click", function () {
         modal.style.display = "none"; // to hide course modal
+
+        let message = `😜 Course Hidden !`;
+            showToast(message, "success");
     });
 
     window.addEventListener("click", function (e) {
         if (e.target === modal) {
             modal.style.display = "none";
+
+            let message = `😜 Course Hidden !`;
+            showToast(message, "success");
         }
     })
 }
@@ -436,7 +445,7 @@ function enableFinalFunctionality(course) {
 
     // console.log("btn clicked!");
 
-    closeFinalBtn.addEventListener("click", function(){
+    closeFinalBtn.addEventListener("click", function () {
         final.style.display = "none";
     })
 
@@ -526,7 +535,7 @@ function handleRatings(rating) {
 // ---------------------------------------------- 
 
 function showToast(message, type) {
-   Toastify({
+    Toastify({
         text: message,
         duration: 3000,
         newWindow: true,
@@ -541,8 +550,8 @@ function showToast(message, type) {
 
     setTimeout(() => {
         document.querySelector(".toastify").style.minWidth = "250px";
-            
-        }, 100);
+
+    }, 100);
 }
 
 
