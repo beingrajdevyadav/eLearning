@@ -60,6 +60,9 @@ Displays toast notifications for user interactions.
 - **Toastify** for displaying notifications.
 
 ## 📫 Connect with Me
-[![Rajdev Yadav](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/beingrajdevyadav/)
+- LinkedIn: [Rajdev Yadav](https://www.linkedin.com/in/beingrajdevyadav/) 
+
+
+- [![Rajdev Yadav](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/beingrajdevyadav/)
 
    
