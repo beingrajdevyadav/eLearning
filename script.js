@@ -283,6 +283,15 @@ function enableEnrollNow(courses) {
 
             const submitBtn = document.getElementById("submit");
             submitBtn.addEventListener("click", function () {
+                // selecting input fields
+                let name = document.querySelector("#name");
+                let phone = document.querySelector("#phone");
+                let email = document.querySelector("#email");
+                let password = document.querySelector("#password");
+
+
+                // write form validation here
+
                 // console.log(courses[i]);
                 enableFinalFunctionality(courses[i]);
                 enrollModal.style.display = "none";
@@ -503,7 +512,7 @@ function searchCourses() {
     paginateCourses(searchResult);
 
     let message = `😯 Great Search ! `;
-        showToast(message, "success");
+    showToast(message, "success");
     document.querySelector("#searchInput").value = '';
 }
 
