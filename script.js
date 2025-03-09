@@ -346,7 +346,38 @@ function enableEnrollNow(courses) {
                 }
 
 
-                
+                // Phone Validation Condition
+                if (phone.value === "") {
+                    phone.style.border = "1px solid red";
+                    phone.style.outlineColor = "red";
+                    phone.placeholder = "Phone is required!";
+                    phone.focus();
+                    let message = `🙄 Phone is required !`;
+                    showToast(message, "success");
+                    return;
+                } else {
+                    // check if phone is number
+                    if (isNaN(phone.value)) {
+                        phone.style.border = "1px solid red";
+                        phone.style.outlineColor = "red";
+                        phone.placeholder = "Phone must be number!";
+                        phone.focus();
+                        let message = `🙄 Phone must be number !`;
+                        showToast(message, "success");
+                        return;
+                    }
+
+                    // check if phone is 10 digits
+                    if (phone.value.length !== 10) {
+                        phone.style.border = "1px solid red";
+                        phone.style.outlineColor = "red";
+                        phone.placeholder = "Phone must be 10 digits!";
+                        phone.focus();
+                        let message = `🙄 Phone must be 10 digits !`;
+                        showToast(message, "success");
+                        return;
+                    }
+                }
 
                 // console.log(courses[i]);
                 enableFinalFunctionality(courses[i]);
